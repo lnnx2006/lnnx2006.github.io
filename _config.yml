@@ -51,10 +51,10 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 
 
 inspire_userid: 
-scholar_userid:  # your Google Scholar ID
-orcid_id:  # your ORCID ID
+scholar_userid: fbYyhmAAAAAJ # your Google Scholar ID
+orcid_id: # your ORCID ID
 github_username: lnnx2006 # your GitHub user name
-stackoverflow_id: 7054480 #your stackoverflow id
+stackoverflow_id:  #your stackoverflow id
 
 gitlab_username: # your GitLab user name
 twitter_username: # your Twitter handle
