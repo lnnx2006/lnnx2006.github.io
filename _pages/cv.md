@@ -1,8 +1,12 @@
 ---
-layout: cv
+layout: page
 permalink: /cv/
-title: cv
-nav: true
-nav_order: 4
-cv_pdf: example_pdf.pdf
+title: curriculum vitae
+description:
+nav: false
 ---
+
+If the embedded version below does not work, you can download a copy <a href='/assets/pdf/CV_FeiLiu_ApplicationAP.pdf'>here</a>.
+<object data="/assets/pdf/FidelSchaposnikMassolo_CV.pdf#view=FitH&pagemode=none" type="application/pdf" style="width:100%;height:100vh">
+	<embed src="/assets/pdf/FidelSchaposnikMassolo_CV.pdf#view=FitH&pagemode=none" type="application/pdf" />
+</object>
