@@ -57,7 +57,7 @@ This is a list of my publications in reverse-chronological order. You can use th
 
 {%- for y in page.years %}
   <h2 class="year">{{y}}</h2>
-  {% bibliography -f papers -q @*[year={{y}}]* %}
+  {% bibliography -f publications_fei -q @*[year={{y}}]* %}
 {% endfor %}
 
 </div>
