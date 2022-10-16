@@ -51,7 +51,7 @@ This is a list of my publications in reverse-chronological order. You can use th
 <!-- <abbr class="{{site.data.badge_colors['yellow']}}" onclick="filterSubject('hep-th')" style="cursor: pointer;">hep-th</abbr>&ensp;
 <abbr class="{{site.data.badge_colors['cyan']}}" onclick="filterSubject('physics.bio-ph')" style="cursor: pointer;">physics.bio-ph</abbr>&ensp;
 <abbr class="{{site.data.badge_colors['green']}}" onclick="filterSubject('cond-mat.stat-mech')" style="cursor: pointer;">cond-mat.stat-mech</abbr> -->
-</center>
+</center> 
 
 <div id="publicationList" class="publications">
 
