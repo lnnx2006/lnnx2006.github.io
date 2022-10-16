@@ -44,13 +44,13 @@ function filterSubject(filter) {
 }
 </script>
 
-This is a list of my preprints and publications in reverse-chronological order. You can use the buttons below to filter according to the various broad areas in which I have worked on.
+This is a list of my publications in reverse-chronological order. You can use the buttons below to filter according to the keywords of research areas.
 
 <center>
 <abbr class="{{site.data.badge_colors['darkgrey']}}" onclick="filterSubject('')" style="cursor: pointer;">all</abbr>&ensp;
-<abbr class="{{site.data.badge_colors['yellow']}}" onclick="filterSubject('hep-th')" style="cursor: pointer;">hep-th</abbr>&ensp;
+<!-- <abbr class="{{site.data.badge_colors['yellow']}}" onclick="filterSubject('hep-th')" style="cursor: pointer;">hep-th</abbr>&ensp;
 <abbr class="{{site.data.badge_colors['cyan']}}" onclick="filterSubject('physics.bio-ph')" style="cursor: pointer;">physics.bio-ph</abbr>&ensp;
-<abbr class="{{site.data.badge_colors['green']}}" onclick="filterSubject('cond-mat.stat-mech')" style="cursor: pointer;">cond-mat.stat-mech</abbr>
+<abbr class="{{site.data.badge_colors['green']}}" onclick="filterSubject('cond-mat.stat-mech')" style="cursor: pointer;">cond-mat.stat-mech</abbr> -->
 </center>
 
 <div id="publicationList" class="publications">
