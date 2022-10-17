@@ -55,6 +55,7 @@ images.
 <div id="publicationList" class="publications">
 
 {% cite Fei_2021_RAL_BloodSuction %}
+{% cite Fei_2016_PhDthesis %}
 {% bibliography --cited_in_order %}
 
 </div>
