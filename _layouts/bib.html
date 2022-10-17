@@ -27,7 +27,7 @@
           {{reference}}
         {%- else %}
           <!-- Title -->
-          <div class="title">
+          	 <div class="title">
 		  {%- if entry.title_url -%}
 		    <a href="{{entry.title_url}}">
 		  {%- endif -%}
@@ -36,6 +36,9 @@
 		    </a>
 		  {%- endif -%}
 		  </div>
+		  {% if entry.honor %}
+          		<span class="honor">({{entry.honor}})</span>
+        	  {% endif %}
           <!-- Author -->
           <div class="author">
           {%- for author in entry.author_array -%}
