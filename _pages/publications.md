@@ -48,9 +48,9 @@ This is a list of my publications in reverse-chronological order. You can use th
 
 <center>
 <abbr class="{{site.data.badge_colors['darkgrey']}}" onclick="filterSubject('')" style="cursor: pointer;">All</abbr>&ensp;
-<abbr class="{{site.data.badge_colors['yellow']}}" onclick="filterSubject('Journal')" style="cursor: pointer;">Journal</abbr>&ensp;
-<abbr class="{{site.data.badge_colors['cyan']}}" onclick="filterSubject('Conference')" style="cursor: pointer;">Conference</abbr>&ensp;
-<abbr class="{{site.data.badge_colors['green']}}" onclick="filterSubject('Others')" style="cursor: pointer;">Others</abbr>
+<abbr class="{{site.data.badge_colors['yellow']}}" onclick="filterSubject('journal')" style="cursor: pointer;">journal</abbr>&ensp;
+<abbr class="{{site.data.badge_colors['cyan']}}" onclick="filterSubject('conference')" style="cursor: pointer;">conference</abbr>&ensp;
+<abbr class="{{site.data.badge_colors['green']}}" onclick="filterSubject('others')" style="cursor: pointer;">others</abbr>
 </center> 
 
 <div id="publicationList" class="publications">
