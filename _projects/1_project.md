@@ -52,5 +52,6 @@ images.
 
 <!-- ### [Full-bio](/bio/) -->
 ## Selected Publications
-{% cite Fei_2021_RAL_BloodSuction Fei_2022_LiMingen%}
-{% bibliography --cited_in_order %}
+- {% cite Fei_2021_RAL_BloodSuction --file _bibliography/publications_fei.bib %}
+<!-- {% cite Fei_2021_RAL_BloodSuction Fei_2022_LiMingen%}
+{% bibliography --cited_in_order %} -->
