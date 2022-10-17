@@ -4,7 +4,18 @@
 
 // Typography
 
-p, h1, h2, h3, h4, h5, h6, em, div, li, span, strong {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+em,
+div,
+li,
+span,
+strong {
   color: var(--global-text-color);
 }
 
@@ -12,29 +23,33 @@ hr {
   border-top: 1px solid var(--global-divider-color);
 }
 
-a, table.table a {
+a,
+table.table a {
   color: var(--global-theme-color);
+
   &:hover {
     color: var(--global-theme-color);
     text-decoration: underline;
   }
+
   &:hover:after :not(.nav-item.dropdown) {
     width: 100%;
   }
 }
 
-figure, img {
+figure,
+img {
   max-width: 90vw;
 }
 
 figure.gallery {
-  aspect-ratio:1;
-  text-align:center;
+  aspect-ratio: 1;
+  text-align: center;
 }
 
 img.gallery {
-  max-width:100%;
-  max-height:100%;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 blockquote {
@@ -66,7 +81,8 @@ blockquote {
 }
 
 // Citation
-.citation, .citation-number {
+.citation,
+.citation-number {
   color: var(--global-theme-color);
 }
 
@@ -80,6 +96,7 @@ blockquote {
     margin-bottom: 5px;
     margin-top: 5px;
     font-family: monospace;
+
     p {
       display: inline-block;
       margin: 0;
@@ -90,8 +107,11 @@ blockquote {
 @media (min-width: 576px) {
   .profile {
     width: 30%;
+
     .address {
-      p { display: block; }
+      p {
+        display: block;
+      }
     }
   }
 }
@@ -99,8 +119,10 @@ blockquote {
 .post-description {
   margin-bottom: 2rem;
   font-size: 0.875rem;
+
   a {
     color: inherit;
+
     &:hover {
       color: var(--global-theme-color);
       text-decoration: none;
@@ -117,58 +139,73 @@ blockquote {
   background-color: var(--global-bg-color);
   opacity: 0.95;
 }
+
 .navbar .dropdown-menu {
   background-color: var(--global-bg-color);
   border: 1px solid var(--global-divider-color);
+
   a:not(.active) {
     color: var(--global-text-color);
   }
+
   a:hover {
     color: var(--global-hover-color);
   }
+
   .dropdown-divider {
     border-top: 1px solid var(--global-divider-color) !important;
   }
 }
+
 .dropdown-item {
   color: var(--global-text-color);
-    &:hover {
-      color: var(--global-hover-color);
-      background-color: var(--global-bg-color);
-    }
+
+  &:hover {
+    color: var(--global-hover-color);
+    background-color: var(--global-bg-color);
+  }
 }
+
 .navbar.navbar-light {
   a {
     &:hover {
       text-decoration: none;
     }
   }
+
   .navbar-brand {
     color: var(--global-text-color);
   }
+
   .navbar-nav .nav-item .nav-link {
     color: var(--global-text-color);
+
     &:hover {
       color: var(--global-hover-color);
     }
   }
+
   .navbar-nav .nav-item.active>.nav-link {
-      background-color: inherit;
-      font-weight: bolder;
-      color: var(--global-theme-color);
-      &:hover {
-        color: var(--global-hover-color);
-      }
+    background-color: inherit;
+    font-weight: bolder;
+    color: var(--global-theme-color);
+
+    &:hover {
+      color: var(--global-hover-color);
+    }
   }
+
   .navbar-brand.social {
     padding-bottom: 0;
     padding-top: 0;
     font-size: 1.7rem;
+
     a {
       i::before {
         color: var(--global-text-color);
         transition-property: all 0.2s ease-in-out;
       }
+
       &:hover {
         i::before {
           color: var(--global-theme-color);
@@ -188,13 +225,16 @@ blockquote {
     margin-bottom: 4px;
     transition: all 0.2s;
   }
+
   .top-bar {
     transform: rotate(45deg);
     transform-origin: 10% 10%;
   }
+
   .middle-bar {
     opacity: 0;
   }
+
   .bottom-bar {
     transform: rotate(-45deg);
     transform-origin: 10% 90%;
@@ -205,9 +245,11 @@ blockquote {
   .top-bar {
     transform: rotate(0);
   }
+
   .middle-bar {
     opacity: 1;
   }
+
   .bottom-bar {
     transform: rotate(0);
   }
@@ -229,13 +271,16 @@ blockquote {
 
 .social {
   text-align: center;
+
   .contact-icons {
     font-size: 2rem;
+
     a {
       i::before {
         color: var(--global-text-color);
         transition-property: all 0.2s ease-in-out;
       }
+
       &:hover {
         i::before {
           color: var(--global-theme-color);
@@ -243,6 +288,7 @@ blockquote {
       }
     }
   }
+
   .contact-note {
     font-size: 0.8rem;
   }
@@ -253,13 +299,16 @@ blockquote {
 footer.fixed-bottom {
   background-color: var(--global-footer-bg-color);
   font-size: 0.75rem;
+
   .container {
     color: var(--global-footer-text-color);
     padding-top: 9px;
     padding-bottom: 8px;
   }
+
   a {
     color: var(--global-footer-link-color);
+
     &:hover {
       color: var(--global-theme-color);
       text-decoration: none;
@@ -294,6 +343,7 @@ footer.sticky-bottom {
   text-align: center;
   padding-top: 2rem;
   padding-bottom: 5rem;
+
   h1 {
     color: var(--global-theme-color);
     font-size: 5rem;
@@ -304,24 +354,29 @@ footer.sticky-bottom {
   margin: 0;
   margin-bottom: 40px;
   padding: 0;
+
   li {
     border-bottom: 1px solid var(--global-divider-color);
     list-style: none;
     padding-top: 2rem;
     padding-bottom: 2rem;
+
     .post-meta {
       color: var(--global-text-color-light);
       font-size: 0.875rem;
       margin-bottom: 0;
     }
+
     .post-tags {
       color: var(--global-text-color-light);
       font-size: 0.875rem;
       padding-top: 0.25rem;
     }
+
     a {
       color: var(--global-text-color);
       text-decoration: none;
+
       &:hover {
         color: var(--global-theme-color);
       }
@@ -333,13 +388,16 @@ footer.sticky-bottom {
   .page-item {
     .page-link {
       color: var(--global-text-color);
+
       &:hover {
         color: $black-color;
       }
     }
+
     &.active .page-link {
       color: $white-color;
       background-color: var(--global-theme-color);
+
       &:hover {
         background-color: var(--global-theme-color);
       }
@@ -375,6 +433,7 @@ footer.sticky-bottom {
     img {
       width: 100%;
     }
+
     .card-title {
       color: $black-color;
     }
@@ -408,70 +467,80 @@ footer.sticky-bottom {
 // Problems
 .problems {
   .btn {
-	color: var(--global-text-color);
-	border: 1px solid var(--global-text-color);
-	padding-left: 1rem;
-	padding-right: 1rem;
-	padding-top: 0.25rem;
-	padding-bottom: 0.25rem;
-	&:hover {
-	  color: var(--global-theme-color);
-	  border-color: var(--global-theme-color);
-	}
+    color: var(--global-text-color);
+    border: 1px solid var(--global-text-color);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+
+    &:hover {
+      color: var(--global-theme-color);
+      border-color: var(--global-theme-color);
+    }
   }
+
   .problemEntry {
     a.code.btn {
       color: var(--global-text-color);
+
       &:hover {
         color: var(--global-theme-color);
         border-color: var(--global-theme-color);
       }
     }
+
     .row.code {
       justify-content: center;
     }
+
     pre {
       margin-top: 0px;
       margin-bottom: 0px;
     }
   }
-  .hidden {
-        font-size: 0.875rem;
-        max-height: 0px;
-        overflow: hidden;
-        text-align: justify;
-        transition-property: 0.15s ease;
-        -moz-transition: 0.15s ease;
-        -ms-transition: 0.15s ease;
-        -o-transition: 0.15s ease;
-        transition: all 0.15s ease;
 
-        p {
-          line-height: 1.4em;
-          margin: 10px;
-        }
-        pre {
-          background-color: var(--global-code-bg-color);
-          font-size: 1em;
-          line-height: 1.4em;
-          padding: 10px;
-        }
-      }
-      .hidden.open {
-        max-height: 50em;
-        transition: all 0.15s ease;
-        overflow-y: scroll;
-      }
-      div.code.hidden {
-        border: dashed 1px var(--global-bg-color);
-        border-radius: 6px;
-        margin: 0px;
-      }
-      div.code.hidden.open {
-        border-color: var(--global-theme-color);
-        width: 95%;
-        margin: 10px;
-      }
+  .hidden {
+    font-size: 0.875rem;
+    max-height: 0px;
+    overflow: hidden;
+    text-align: justify;
+    transition-property: 0.15s ease;
+    -moz-transition: 0.15s ease;
+    -ms-transition: 0.15s ease;
+    -o-transition: 0.15s ease;
+    transition: all 0.15s ease;
+
+    p {
+      line-height: 1.4em;
+      margin: 10px;
+    }
+
+    pre {
+      background-color: var(--global-code-bg-color);
+      font-size: 1em;
+      line-height: 1.4em;
+      padding: 10px;
+    }
+  }
+
+  .hidden.open {
+    max-height: 50em;
+    transition: all 0.15s ease;
+    overflow-y: scroll;
+  }
+
+  div.code.hidden {
+    border: dashed 1px var(--global-bg-color);
+    border-radius: 6px;
+    margin: 0px;
+  }
+
+  div.code.hidden.open {
+    border-color: var(--global-theme-color);
+    width: 95%;
+    margin: 10px;
+  }
 }
 
 
@@ -481,40 +550,47 @@ footer.sticky-bottom {
     .title {
       font-weight: 400;
     }
+
     .btn {
-    color: var(--global-text-color);
-    border: 1px solid var(--global-text-color);
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 0.25rem;
-    padding-bottom: 0.25rem;
-    &:hover {
-      color: var(--global-theme-color);
-      border-color: var(--global-theme-color);
-    }
-    }
-    a.statement.btn {
       color: var(--global-text-color);
+      border: 1px solid var(--global-text-color);
       padding-left: 1rem;
       padding-right: 1rem;
+      padding-top: 0.25rem;
+      padding-bottom: 0.25rem;
+
       &:hover {
         color: var(--global-theme-color);
         border-color: var(--global-theme-color);
       }
     }
+
+    a.statement.btn {
+      color: var(--global-text-color);
+      padding-left: 1rem;
+      padding-right: 1rem;
+
+      &:hover {
+        color: var(--global-theme-color);
+        border-color: var(--global-theme-color);
+      }
+    }
+
     .row.statement {
       justify-content: center;
     }
+
     .statement.hidden {
-      margin-bottom:0px;
+      margin-bottom: 0px;
       max-height: 0px;
       overflow: hidden;
       width: 95%;
       border: dashed 1px var(--global-bg-color);
       border-radius: 6px;
     }
+
     .statement.hidden.open {
-      margin-bottom:10px;
+      margin-bottom: 10px;
       max-height: 50em;
       transition: all 0.25s ease;
       border: dashed 1px var(--global-divider-color);
@@ -527,6 +603,7 @@ footer.sticky-bottom {
 
 .publications {
   margin-top: 2rem;
+
   h1 {
     color: var(--global-theme-color);
     font-size: 2rem;
@@ -534,12 +611,15 @@ footer.sticky-bottom {
     margin-top: 1em;
     margin-bottom: 1em;
   }
+
   h2 {
     margin-bottom: 1rem;
+
     span {
       font-size: 1.5rem;
     }
   }
+
   h2.year {
     color: var(--global-divider-color);
     border-top: 1px solid var(--global-divider-color);
@@ -548,6 +628,7 @@ footer.sticky-bottom {
     margin-bottom: -2rem;
     text-align: right;
   }
+
   ol.bibliography {
     list-style: none;
     padding: 0;
@@ -555,42 +636,56 @@ footer.sticky-bottom {
 
     li {
       margin-bottom: 1rem;
+
       .abbr {
         height: 2rem;
         margin-bottom: 0.5rem;
+
         abbr {
           display: inline-block;
           background-color: var(--global-theme-color);
           padding-left: 0.5rem;
           padding-right: 0.5rem;
+
           a {
             color: white;
+
             &:hover {
               text-decoration: none;
             }
           }
         }
+
         .award {
           color: var(--global-theme-color) !important;
           border: 1px solid var(--global-theme-color);
         }
       }
+
       .title {
         font-weight: bolder;
       }
+
       .author {
         a {
           border-bottom: 1px dashed var(--global-theme-color);
+
           &:hover {
-              border-bottom-style: solid;
-              text-decoration: none;
+            border-bottom-style: solid;
+            text-decoration: none;
           }
         }
-        > em {
+
+        >em {
           border-bottom: 1px solid;
           font-style: normal;
         }
       }
+
+      .honor {
+        color: rgb(221, 83, 83);
+      }
+
       .links {
         a.btn {
           color: var(--global-text-color);
@@ -599,12 +694,14 @@ footer.sticky-bottom {
           padding-right: 1rem;
           padding-top: 0.25rem;
           padding-bottom: 0.25rem;
+
           &:hover {
             color: var(--global-theme-color);
             border-color: var(--global-theme-color);
           }
         }
       }
+
       .hidden {
         font-size: 0.875rem;
         max-height: 0px;
@@ -620,12 +717,14 @@ footer.sticky-bottom {
           line-height: 1.4em;
           margin: 10px;
         }
+
         pre {
           font-size: 1em;
           line-height: 1.4em;
           padding: 10px;
         }
       }
+
       .hidden.open {
         max-height: 100em;
         transition-property: 0.15s ease;
@@ -634,10 +733,12 @@ footer.sticky-bottom {
         -o-transition: 0.15s ease;
         transition: all 0.15s ease;
       }
+
       div.abstract.hidden {
         border-radius: 6px;
         border: dashed 1px var(--global-bg-color);
       }
+
       div.abstract.hidden.open {
         border-color: var(--global-divider-color);
       }
@@ -666,7 +767,9 @@ pre {
   border: 1px dashed;
   border-radius: 6px;
   padding: 6px 12px;
-  pre, code {
+
+  pre,
+  code {
     background-color: transparent;
     border-radius: 0;
     padding: 0;
@@ -691,30 +794,34 @@ html.transition *:after {
 }
 
 // Extra Markdown style (post Customization)
-.post{
-  .post-meta{
+.post {
+  .post-meta {
     color: var(--global-text-color-light);
     font-size: 0.875rem;
     margin-bottom: 0;
   }
-  .post-tags{
+
+  .post-tags {
     color: var(--global-text-color-light);
     font-size: 0.875rem;
     padding-bottom: 1rem;
+
     a {
       color: var(--global-text-color-light);
       text-decoration: none;
+
       &:hover {
         color: var(--global-theme-color);
       }
     }
   }
-  .post-content{
-        blockquote {
-          border-left: 5px solid var(--global-theme-color);
-          padding: 8px;
-      }
-}
+
+  .post-content {
+    blockquote {
+      border-left: 5px solid var(--global-theme-color);
+      padding: 8px;
+    }
+  }
 }
 
 .post-tags {
