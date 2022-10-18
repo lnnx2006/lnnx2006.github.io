@@ -3,7 +3,7 @@
 <!-- _layouts/bib.html -->
     <div class="row">
 	  <div class="section-tag" style="display: none;">{{entry.year}}</div>
-      {%- if entry.img -%}
+    {%- if entry.img -%}
 	  <div class="col-sm-auto">
 	  {%- else -%}
 	  <div class="col-sm-2 abbr">
@@ -13,6 +13,7 @@
 		  {%- endif -%}
 		    {%- if entry.img -%}
 		    <img src="{{entry.img}}" width="150px">
+        {{entry.abbr}}
 			{%- else -%}
 			{{entry.abbr}}
 			{%- endif -%}
