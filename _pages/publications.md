@@ -45,7 +45,7 @@ function filterSubject(filter) {
 }
 </script>
 
-This is a list of my publications in reverse-chronological order. You can use the buttons below to filter according to the keywords of research areas.
+This is a list of my publications in reverse-chronological order. You can use the buttons below to filter according to the type of publication.
 
 <center>
 <abbr class="{{site.data.badge_colors['lightgrey']}}" onclick="filterSubject('')" style="cursor: pointer;">all</abbr>&ensp;

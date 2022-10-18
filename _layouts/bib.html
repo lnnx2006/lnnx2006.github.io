@@ -38,6 +38,12 @@
 		    </a>
 		  {%- endif -%}
 		  </div>
+
+           <!-- Honor -->
+          {% if entry.honor %}
+          <span class="honor">({{entry.honor}})</span>
+          {% endif %}
+
           <!-- Author -->
           <div class="author">
           {%- for author in entry.author_array -%}
