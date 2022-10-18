@@ -19,6 +19,7 @@ function filterSubject(filter) {
     var abbr = rows[i].getElementsByClassName("type")[0];
     if (abbr) {
       var txtValue = abbr.textContent || abbr.innerText;
+      console.log(abbr, txtValue);
       if (txtValue.indexOf(filter) > -1) {
         rows[i].style.display = "";
       } else {
