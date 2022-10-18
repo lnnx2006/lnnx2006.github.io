@@ -24,93 +24,93 @@
     <!-- Entry bib key -->
     <div id="{{entry.key}}" class="col-sm-8">
       {% if entry.type == "thesis" -%}
-      {{reference}}
+        {{reference}}
       {%- else %}
-      <!-- Title -->
-      <div class="title">
-        {%- if entry.title_url -%}
-        <a href="{{entry.title_url}}">
-          {%- endif -%}
-          {{entry.title}}
+        <!-- Title -->
+        <div class="title">
           {%- if entry.title_url -%}
-        </a>
-        {%- endif -%}
-      </div>
+          <a href="{{entry.title_url}}">
+            {%- endif -%}
+            {{entry.title}}
+            {%- if entry.title_url -%}
+          </a>
+          {%- endif -%}
+        </div>
 
-      {% if entry.honor %}
-      <span class="honor">({{entry.honor}})</span>
-      {% endif %}
+        {% if entry.honor %}
+        <span class="honor">({{entry.honor}})</span>
+        {% endif %}
 
-      <!-- Author -->
-      <div class="author">
-        {%- for author in entry.author_array -%}
-        {%- assign author_is_self = false -%}
-        {%- if author.last == site.scholar.last_name%}
-        {%- if site.scholar.first_name contains author.first -%}
-        {%- assign author_is_self = true -%}
-        {%- endif -%}
-        {%- endif -%}
-        {%- assign coauthor_url = nil -%}
-        {%- if site.data.coauthors[author.last] -%}
-        {%- for coauthor in site.data.coauthors[author.last] -%}
-        {%- if coauthor.firstname contains author.first -%}
-        {%- assign coauthor_url = coauthor.url -%}
-        {%- break -%}
-        {%- endif -%}
-        {%- endfor -%}
+        <!-- Author -->
+        <div class="author">
+          {%- for author in entry.author_array -%}
+          {%- assign author_is_self = false -%}
+          {%- if author.last == site.scholar.last_name%}
+          {%- if site.scholar.first_name contains author.first -%}
+          {%- assign author_is_self = true -%}
+          {%- endif -%}
+          {%- endif -%}
+          {%- assign coauthor_url = nil -%}
+          {%- if site.data.coauthors[author.last] -%}
+          {%- for coauthor in site.data.coauthors[author.last] -%}
+          {%- if coauthor.firstname contains author.first -%}
+          {%- assign coauthor_url = coauthor.url -%}
+          {%- break -%}
+          {%- endif -%}
+          {%- endfor -%}
+          {%- endif -%}
+
+          {%- if forloop.length == 1 -%}
+          {%- if author_is_self %}
+          <em>{{author.first}} {{author.last}}</em>
+          {%- else -%}
+          {{author.first}} {{author.last}}
+          {%- endif -%}
+          {%- else -%}
+          {%- unless forloop.first -%}
+          {%- if forloop.last -%}
+          &nbsp;and&nbsp;
+          {%- else -%}
+          ,&nbsp;
+          {%- endif -%}
+          {%- endunless -%}
+          {% if author_is_self %}
+          <em>{{author.first}} {{author.last}}</em>
+          {%- else -%}
+          {% if coauthor_url -%}
+          <a href="endif{{coauthor_url}}">{{author.first}} {{author.last}}</a>
+          {%- else -%}
+          {{author.first}} {{author.last}}
+          {%- endif -%}
+          {%- endif -%}
+          {%- endif -%}
+          {%- endfor %}
+        </div>
+
+        <!-- Journal/Book title and date -->
+        {% if entry.type == "article" -%}
+        {%- capture entrytype -%}<em>{{entry.journal}}</em>{%- endcapture -%}
+        {%- elsif entry.type == "inproceedings" -%}
+        {%- capture entrytype -%}<em>In {{entry.booktitle}}</em> {%- endcapture
+        -%}
         {%- endif -%}
 
-        {%- if forloop.length == 1 -%}
-        {%- if author_is_self %}
-        <em>{{author.first}} {{author.last}}</em>
-        {%- else -%}
-        {{author.first}} {{author.last}}
+        {%- if entry.month -%}
+        {%- capture entrymonth -%}{{ " " }}{{ entry.month | capitalize }}{%-
+        endcapture -%}
         {%- endif -%}
-        {%- else -%}
-        {%- unless forloop.first -%}
-        {%- if forloop.last -%}
-        &nbsp;and&nbsp;
-        {%- else -%}
-        ,&nbsp;
-        {%- endif -%}
-        {%- endunless -%}
-        {% if author_is_self %}
-        <em>{{author.first}} {{author.last}}</em>
-        {%- else -%}
-        {% if coauthor_url -%}
-        <a href="endif{{coauthor_url}}">{{author.first}} {{author.last}}</a>
-        {%- else -%}
-        {{author.first}} {{author.last}}
-        {%- endif -%}
-        {%- endif -%}
-        {%- endif -%}
-        {%- endfor %}
-      </div>
 
-      <!-- Journal/Book title and date -->
-      {% if entry.type == "article" -%}
-      {%- capture entrytype -%}<em>{{entry.journal}}</em>{%- endcapture -%}
-      {%- elsif entry.type == "inproceedings" -%}
-      {%- capture entrytype -%}<em>In {{entry.booktitle}}</em> {%- endcapture
-      -%}
-      {%- endif -%}
+        {%- if entry.year -%}
+        {%- capture entryyear -%}{{ " " }}{{entry.year}}{%- endcapture -%}
+        {%- endif -%}
 
-      {%- if entry.month -%}
-      {%- capture entrymonth -%}{{ " " }}{{ entry.month | capitalize }}{%-
-      endcapture -%}
-      {%- endif -%}
+        {%- capture periodical -%}{{ entrytype }}{{ entrymonth }}{{ entryyear
+        }}{%- endcapture -%}
+        
 
-      {%- if entry.year -%}
-      {%- capture entryyear -%}{{ " " }}{{entry.year}}{%- endcapture -%}
-      {%- endif -%}
-
-      {%- capture periodical -%}{{ entrytype }}{{ entrymonth }}{{ entryyear
-      }}{%- endcapture -%}
-      
-      
-      <div class="periodical">
-        {{ periodical | strip }}
-      </div>
+        <div class="periodical">
+          {{ periodical | strip }}
+        </div>
       {%- endif %}
 
       <!-- Links/Buttons -->
