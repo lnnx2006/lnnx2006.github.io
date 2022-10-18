@@ -200,8 +200,8 @@ jekyll-archives:
 
 scholar:
 
-  last_name: [LIU]
-  first_name: [Fei]
+  last_name: Liu
+  first_name: Fei
 
   style: apa
   locale: en

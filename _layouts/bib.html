@@ -72,7 +72,7 @@
 
         {%- if forloop.length == 1 -%}
         {%- if author_is_self %}
-        <em>{{author.first}} {{author.last}}</em>
+        <span style="color: #256D85"><em>{{author.first}} {{author.last}}</em></span>
         {%- else -%}
         {{author.first}} {{author.last}}
         {%- endif -%}
