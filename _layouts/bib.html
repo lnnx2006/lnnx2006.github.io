@@ -85,7 +85,8 @@
         {%- endif -%}
         {%- endunless -%}
         {% if author_is_self %}
-        <em>{{author.first}} {{author.last}}</em>
+        <!-- <em>{{author.first}} {{author.last}}</em> -->
+        <em><strong><span style="color: #256D85">{{author.first}} {{author.last}}</span></strong></em>
         {%- else -%}
         {% if coauthor_url -%}
         <a href="{{coauthor_url}}">{{author.first}} {{author.last}}</a>
