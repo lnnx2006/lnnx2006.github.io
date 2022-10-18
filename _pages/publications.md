@@ -3,7 +3,7 @@ layout: page
 permalink: /publications/
 title: publications
 description:
-years: [2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015]
+years: [2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015, 2012]
 nav: true
 nav_order: 1
 ---
@@ -16,7 +16,7 @@ function filterSubject(filter) {
   
   // Loop through all rows, hide those which don't match the selected filter
   for (i = 0; i < rows.length; i++) {
-    var abbr = rows[i].getElementsByClassName("type")[0];
+    var abbr = rows[i].getElementsByClassName("abbr")[0];
     if (abbr) {
       var txtValue = abbr.textContent || abbr.innerText;
       if (txtValue.indexOf(filter) > -1) {
