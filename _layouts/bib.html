@@ -55,8 +55,8 @@
       <div class="author">
         {%- for author in entry.author_array -%}
         {%- assign author_is_self = false -%}
-        {%- if author.last == site.scholar.last_name%}
-        {%- if site.scholar.first_name contains author.first -%}
+        {%- if author.first == site.scholar.first_name%}
+        {%- if site.scholar.last_name contains author.last -%}
         {%- assign author_is_self = true -%}
         {%- endif -%}
         {%- endif -%}
@@ -72,7 +72,7 @@
 
         {%- if forloop.length == 1 -%}
         {%- if author_is_self %}
-        <span style="color: #256D85"><em>{{author.first}} {{author.last}}</em></span>
+        <em><span style="color: #256D85">{{author.first}} {{author.last}}</span></em>
         {%- else -%}
         {{author.first}} {{author.last}}
         {%- endif -%}

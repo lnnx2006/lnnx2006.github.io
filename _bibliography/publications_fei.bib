@@ -18,7 +18,7 @@
 }
 
 @inproceedings{Fei_2012_IARC,
-  author = {<strong><span style="color:var(--global-theme-color)">Mina Huh*</span></strong> and Yinan, Sang and Jie, He and Ji, Fan and Ruichao, Li and Xiongyi, Cui and Haoyu, Li and Jie, Chen},
+  author = {Liu, Fei and Yinan, Sang and Jie, He and Jie, Fan and Ruichao, Li and Xiongyi, Cui and Haoyu, Li and Jie, Chen},
   year = {2012},
   month = {},
   pages = {},
@@ -145,7 +145,7 @@
 }
 
 @inproceedings{Fei_2021_ICRA_Jingbin,  
-  author={Huang, Jingbin and Liu, Fei and Richter, Florian and Yip, Michael C.},  
+  author={Huang*, Jingbin and Liu*, Fei and Richter, Florian and Yip, Michael C.},  
   booktitle={2021 IEEE International Conference on Robotics and Automation (ICRA)},   
   title={Model-Predictive Control of Blood Suction for Surgical Hemostasis using Differentiable Fluid Simulations},   
   year={2021},  
@@ -180,7 +180,7 @@
 }
 
 @inproceedings{Fei_2021_Real2Sim,  
-  author={Liu, Fei and Li, Zihan and Han, Yunhai and Lu, Jingpei and Richter, Florian and Yip, Michael C.},  
+  author={Liu*, Fei and Li, Zihan and Han, Yunhai and Lu, Jingpei and Richter, Florian and Yip, Michael C.},  
   booktitle={2021 IEEE International Conference on Robotics and Automation (ICRA)},   
   title={Real-to-Sim Registration of Deformable Soft Tissue with Position-Based Dynamics for Surgical Robot Autonomy},   
   year={2021},  
@@ -252,7 +252,7 @@
 @article{Fei_2022_SuEntong,
   doi = {10.48550/ARXIV.2202.09714},
   html = {https://arxiv.org/abs/2202.09714},
-  author = {Liu, Fei and Su, Entong and Lu, Jingpei and Li, Mingen and Yip, Michael C.},
+  author = {Liu*, Fei and Su, Entong and Lu, Jingpei and Li, Mingen and Yip, Michael C.},
   ABSTRACT={Robot manipulation of rope-like objects is an interesting problem that has some critical applications, such as autonomous robotic suturing. Solving for and controlling rope is difficult due to the complexity of rope physics and the challenge of building fast and accurate models of deformable materials. While more data-driven approaches have become more popular for finding controllers that learn to do a single task, there is still a strong motivation for a model-based method that could be used to solve a large variety of optimization problems. Towards this end, we introduced compliant, position-based dynamics (XPBD) to model rope-like objects. Using geometric constraints, the model can represent the coupling of shear/stretch and bend/twist effects. Of crucial importance is that our formulation is differentiable, which can solve parameter estimation problems and improve the matching of rope physics to real-life scenarios (i.e., the real-to-sim problem). For the generality of rope-like objects, two different solvers are proposed to handle the inextensible and extensible effects of varied material stiffness for the rope. We demonstrate our framework's robustness and accuracy on real-to-sim experimental setups using the Baxter robot and the da Vinci research kit (DVRK). Our work leads to a new path for robotic manipulation of the deformable rope-like object taking advantage of the ready-to-use gradients.},
   keywords = {Robotics (cs.RO), FOS: Computer and information sciences, FOS: Computer and information sciences},
   title = {Differentiable Robotic Manipulation of Deformable Rope-like Objects Using Compliant Position-based Dynamics},
@@ -267,7 +267,7 @@
 @article{Fei_2022_LiMingen,
   doi = {10.48550/ARXIV.2201.05753}, 
   html = {https://arxiv.org/abs/2201.05753},
-  author = {Liu, Fei and Li, Mingen and Lu, Jingpei and Su, Entong and Yip, Michael C.},
+  author = {Liu*, Fei and Li, Mingen and Lu, Jingpei and Su, Entong and Yip, Michael C.},
   abstract={Simulation modeling of robots, objects, and environments is the backbone for all model-based control and learning. It is leveraged broadly across dynamic programming and model-predictive control, as well as data generation for imitation, transfer, and reinforcement learning. In addition to fidelity, key features of models in these control and learning contexts are speed, stability, and native differentiability. However, many popular simulation platforms for robotics today lack at least one of the features above. More recently, position-based dynamics (PBD) has become a very popular simulation tool for modeling complex scenes of rigid and non-rigid object interactions, due to its speed and stability, and is starting to gain significant interest in robotics for its potential use in model-based control and learning. Thus, in this paper, we present a mathematical formulation for coupling position-based dynamics (PBD) simulation and optimal robot design, model-based motion control and system identification. Our framework breaks down PBD definitions and derivations for various types of joint-based articulated rigid bodies. We present a back-propagation method with automatic differentiation, which can integrate both positional and angular geometric constraints. Our framework can critically provide the native gradient information and perform gradient-based optimization tasks. We also propose articulated joint model representations and simulation workflow for our differentiable framework. We demonstrate the capability of the framework in efficient optimal robot design, accurate trajectory torque estimation and supporting spring stiffness estimation, where we achieve minor errors. We also implement impedance control in real robots to demonstrate the potential of our differentiable framework in human-in-the-loop applications.},
   keywords = {Robotics (cs.RO), FOS: Computer and information sciences, FOS: Computer and information sciences},
   title = {Parameter Identification and Motion Control for Articulated Rigid Body Robots Using Differentiable Position-based Dynamics},
@@ -303,7 +303,7 @@
 
 
 @inproceedings{Fei_2022_ICRA_Jingpei,
-  author = {Lu, Jingpei and Liu, Fei and Girerd, Cédric and Yip, Michael},
+  author = {Lu*, Jingpei and Liu*, Fei and Girerd, Cédric and Yip, Michael},
   booktitle={2023 IEEE International Conference on Robotics and Automation (ICRA)},   
   keywords = {Robotics (cs.RO), FOS: Computer and information sciences, FOS: Computer and information sciences},
   title = {Image-based Pose Estimation and Shape Reconstruction for Robot Manipulators and Soft, Continuum Robots via Differentiable Rendering},
@@ -338,7 +338,7 @@
   img = {/assets/img/publication_preview/Fei_2022_Zhaowei.png},
 }
 
-@article{Fei_2022_Zhaowei,
+@article{Fei_2022_CatheterReconstFA,
   author={Liu, Fei and Richter, Florian and Yin, Fei and He, Chong and Yip, Michael C.},
   journal={IEEE Robotics and Automation Letters}, 
   title={Continuum Robot Shape Reconstruction and Tracking from Monocular Endoscopic Image Sequences}, 
