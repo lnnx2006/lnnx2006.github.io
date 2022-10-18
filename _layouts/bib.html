@@ -13,8 +13,14 @@
         {%- endif -%}
         {%- if entry.img -%}
         <img src="{{entry.img}}" width="150px">
-        <!-- <br>
-        {{entry.abbr}} -->
+
+        <!-- Classification -->
+        {% if entry.abbr %}
+        <div class="classification">
+          {{entry.abbr}}
+        </div>
+        {% endif %}
+
         {%- else -%}
         {{entry.abbr}}
         {%- endif -%}
@@ -42,13 +48,6 @@
       <!-- Honor -->
       {% if entry.honor %}
       <span class="honor">({{entry.honor}})</span>
-      {% endif %}
-
-      <!-- A -->
-      {% if entry.abbr %}
-      <div class="classification">
-        {{entry.abbr}}
-      </div>
       {% endif %}
 
       <!-- Author -->
