@@ -28,6 +28,7 @@
   title = {Northwestern Polytechnical University Team Entry for the 2012 AUVSI International Aerial Robotics Competition, International Aerial Robotics Competition (IARC) Symposium},
   isbn = {},
   doi = {},
+  booktitle = {2012 Proceedings of International Aerial Robotics Competition}
   abstract = {The Icarus-UAV project stresses on building an autonomous air vehicle in
   confined environment with relatively low cost and simple structure. The
   vehicle is based on a 4-rotor flight, with an FPGA as the central processing
@@ -49,6 +50,7 @@
   year = {2015},
   month = {07},
   pages = {},
+  booktitle = {International Conference New Trends in Medical and Service Robots (MESROB)}
   title = {A Dual-User Teleoperation System with Adaptive Authority Adjustment for Haptic Training},
   abstract = {This paper presents a shared control based dual-user teleoperation haptic training system. The main contribution is an Adaptive Authority Adjustment (AAA). The authority is determined on-line according to the trainee’s behavior performance. An evaluation method is introduced based on an adaptive virtual boundary, which results into a time-varing dominance factor. An overruling function is set upstream to solve some specific cases. The system is modeled and controled in port-Hamiltonian form for passivity preserving. Experiments are conducted for validation.},
   isbn = {978-3-319-30673-5},
@@ -145,7 +147,7 @@
   author = {Han, Yunhai and Liu, Fei and Yip, Michael C.},
   keywords = {Robotics (cs.RO), FOS: Computer and information sciences, FOS: Computer and information sciences},
   title = {A 2D Surgical Simulation Framework for Tool-Tissue Interaction},
-  publisher = {arXiv},
+  booktitle = {2021 IROS Workshop},
   abstract = {The control and task automation of robotic surgical system is very challenging, especially in soft tissue manipulation, due to the unpredictable deformations. Thus, an accurate simulator of soft tissues with the ability of interacting with robot manipulators is necessary. In this work, we propose a novel 2D simulation framework for tool-tissue interaction. This framework continuously tracks the motion of manipulator and simulates the tissue deformation in presence of collision detection. The deformation energy can be computed for the control and planning task.},
   year = {2020}, 
   copyright = {arXiv.org perpetual, non-exclusive license},
@@ -179,7 +181,7 @@
   author = {Joglekar, Neelay and Liu, Fei and Orosco, Ryan and Yip, Michael},
   keywords = {Robotics (cs.RO), FOS: Computer and information sciences, FOS: Computer and information sciences},
   title = {Suture Thread Spline Reconstruction from Endoscopic Images for Robotic Surgery with Reliability-driven Keypoint Detection},
-  publisher = {arXiv}, 
+  booktitle = {arXiv}, 
   year = {2022},
   abstract = {Automating the process of manipulating and delivering sutures during robotic surgery is a prominent problem at the frontier of surgical robotics, as automating this task can significantly reduce surgeons' fatigue during tele-operated surgery and allow them to spend more time addressing higher-level clinical decision making. Accomplishing autonomous suturing and suture manipulation in the real world requires accurate suture thread localization and reconstruction, the process of creating a 3D shape representation of suture thread from 2D stereo camera surgical image pairs. This is a very challenging problem due to how limited pixel information is available for the threads, as well as their sensitivity to lighting and specular reflection. We present a suture thread reconstruction work that uses reliable keypoints and a Minimum Variation Spline (MVS) smoothing optimization to construct a 3D centerline from a segmented surgical image pair. This method is comparable to previous suture thread reconstruction works, with the possible benefit of increased accuracy of grasping point estimation. Our code and datasets will be available at: this https URL.},
   copyright = {arXiv.org perpetual, non-exclusive license},
@@ -231,6 +233,7 @@
   month = {01},
   pages = {183-214},
   title = {Applications of Haptics in Medicine},
+  journal = {Haptic Interfaces for Accessibility, Health, and Enhanced Quality of Life}
   abstract = {Touch is one of the most important sensory inputs during the performance of surgery. However, the literature on kinesthetic and tactile feedback both called haptics in surgical training remains rudimentary. This rudimentary knowledge is partial since that haptic feedback is difficult to describe, as well as record and playback. This chapter aims at focusing on the use of haptics in the training of medical staff and also as a complementary tool for robotized and remote procedures. It provides an overview of the various available technologies to perform haptic feedback and details on how haptic guidance can enhance surgical skill acquisition. A critical review of available haptic interfaces vis-a-vis medical interventions to be performed is provided. The chapter ends with an illustration merging the advantages of usual supervised hands-on training and the ones offered by computer-based training: dual-user training simulators.},
   isbn = {978-3-030-34229-6},
   doi = {10.1007/978-3-030-34230-2_7},
@@ -264,7 +267,7 @@
   ABSTRACT={Robot manipulation of rope-like objects is an interesting problem that has some critical applications, such as autonomous robotic suturing. Solving for and controlling rope is difficult due to the complexity of rope physics and the challenge of building fast and accurate models of deformable materials. While more data-driven approaches have become more popular for finding controllers that learn to do a single task, there is still a strong motivation for a model-based method that could be used to solve a large variety of optimization problems. Towards this end, we introduced compliant, position-based dynamics (XPBD) to model rope-like objects. Using geometric constraints, the model can represent the coupling of shear/stretch and bend/twist effects. Of crucial importance is that our formulation is differentiable, which can solve parameter estimation problems and improve the matching of rope physics to real-life scenarios (i.e., the real-to-sim problem). For the generality of rope-like objects, two different solvers are proposed to handle the inextensible and extensible effects of varied material stiffness for the rope. We demonstrate our framework's robustness and accuracy on real-to-sim experimental setups using the Baxter robot and the da Vinci research kit (DVRK). Our work leads to a new path for robotic manipulation of the deformable rope-like object taking advantage of the ready-to-use gradients.},
   keywords = {Robotics (cs.RO), FOS: Computer and information sciences, FOS: Computer and information sciences},
   title = {Differentiable Robotic Manipulation of Deformable Rope-like Objects Using Compliant Position-based Dynamics},
-  publisher = {arXiv},
+  journal = {arXiv},
   year = {2022},
   abbr = {journal},
   color = {color_jour},
@@ -278,7 +281,7 @@
   abstract={Simulation modeling of robots, objects, and environments is the backbone for all model-based control and learning. It is leveraged broadly across dynamic programming and model-predictive control, as well as data generation for imitation, transfer, and reinforcement learning. In addition to fidelity, key features of models in these control and learning contexts are speed, stability, and native differentiability. However, many popular simulation platforms for robotics today lack at least one of the features above. More recently, position-based dynamics (PBD) has become a very popular simulation tool for modeling complex scenes of rigid and non-rigid object interactions, due to its speed and stability, and is starting to gain significant interest in robotics for its potential use in model-based control and learning. Thus, in this paper, we present a mathematical formulation for coupling position-based dynamics (PBD) simulation and optimal robot design, model-based motion control and system identification. Our framework breaks down PBD definitions and derivations for various types of joint-based articulated rigid bodies. We present a back-propagation method with automatic differentiation, which can integrate both positional and angular geometric constraints. Our framework can critically provide the native gradient information and perform gradient-based optimization tasks. We also propose articulated joint model representations and simulation workflow for our differentiable framework. We demonstrate the capability of the framework in efficient optimal robot design, accurate trajectory torque estimation and supporting spring stiffness estimation, where we achieve minor errors. We also implement impedance control in real robots to demonstrate the potential of our differentiable framework in human-in-the-loop applications.},
   keywords = {Robotics (cs.RO), FOS: Computer and information sciences, FOS: Computer and information sciences},
   title = {Parameter Identification and Motion Control for Articulated Rigid Body Robots Using Differentiable Position-based Dynamics},
-  publisher = {arXiv},
+  journal = {arXiv},
   year = {2022},
   abbr = {journal},
   color = {color_jour},
