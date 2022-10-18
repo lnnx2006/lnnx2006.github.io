@@ -40,6 +40,7 @@
       {% if entry.honor %}
       <span class="honor">({{entry.honor}})</span>
       {% endif %}
+
       <!-- Author -->
       <div class="author">
         {%- for author in entry.author_array -%}
@@ -105,6 +106,8 @@
 
       {%- capture periodical -%}{{ entrytype }}{{ entrymonth }}{{ entryyear
       }}{%- endcapture -%}
+      
+      
       <div class="periodical">
         {{ periodical | strip }}
       </div>
