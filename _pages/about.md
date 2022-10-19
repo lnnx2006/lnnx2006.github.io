@@ -26,4 +26,4 @@ Apart from my research habit, I enjoy hiking, backpacking and skiing.
 - Medical Robots and Systems
 - Surgical Robotics
 - Autonomy for Mobility and Manipulation
-- Constrainted Optimization
+- Constrained Optimization
