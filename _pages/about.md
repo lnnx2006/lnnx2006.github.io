@@ -18,7 +18,7 @@ I am a postdoctoral researcher at [Advanced Robotics and Controls Lab](https://w
 Apart from my research habit, I enjoy hiking, backpacking and skiing.
 
 
-### Reserch Focus
+### Research Focus
 - Modeling and Control
 - Dynamics
 - Visual Servoing
