@@ -133,6 +133,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - vendor
+  - _pages/projects.md
 keep_files:
   - CNAME
   - .nojekyll
