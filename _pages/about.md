@@ -43,4 +43,5 @@ Apart from my research habit, I enjoy hiking, backpacking and skiing.
 - Constrained Optimization
 - Mechatronics
 
-{% include figure.html path="assets/img/research_focus.png" title="research_focus" style="width:30%" class="img-fluid rounded z-depth-1" %}
+<p align="right">{% include figure.html path="assets/img/research_focus.png" title="research_focus" style="width:30%" class="img-fluid rounded z-depth-1" %}
+</p>
