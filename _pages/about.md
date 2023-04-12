@@ -27,3 +27,5 @@ Apart from my research habit, I enjoy hiking, backpacking and skiing.
 - Surgical Robotics
 - Autonomy for Mobility and Manipulation
 - Constrained Optimization
+
+{% include figure.html path="assets/img/research_focus.png" title="research_focus" class="img-fluid" %}
