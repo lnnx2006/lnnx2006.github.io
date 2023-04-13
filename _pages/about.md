@@ -36,6 +36,7 @@ Apart from my research habit, I enjoy hiking, backpacking and skiing.
 - Physical-based Simulation
 <!-- - Constrained Optimization -->
 - Visual Servoing
+
 #### Applications
 - Medical Robots and Systems
 - Surgical Robotics
