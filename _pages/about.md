@@ -30,8 +30,8 @@ For further information about my background and research contributions, please r
 
 Apart from my research habit, I enjoy hiking, backpacking and skiing.
 
-#### Research Interests
 {% include figure.html path="assets/img/research_focus.png" title="research_focus" style="width:50%;float: right" align="right" %}
+#### Research Interests
 - Robotic Modeling, Control and Dynamics
 - Physical-based Simulation
 - Constrained Optimization
