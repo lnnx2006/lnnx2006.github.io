@@ -30,15 +30,14 @@ For further information about my background and research contributions, please r
 
 Apart from my research habit, I enjoy hiking, backpacking and skiing.
 
-
-### Research Interests & Applications
+#### Research Interests
 {% include figure.html path="assets/img/research_focus.png" title="research_focus" style="width:50%;float: right" align="right" %}
+- Robotic Modeling, Control and Dynamics
+- Physical-based Simulation
+<!-- - Constrained Optimization -->
+- Visual Servoing
+#### Applications
 - Medical Robots and Systems
 - Surgical Robotics
 - Robotic Autonomy and Manipulation
 - Mechatronics 
-
-- Modeling, Control and Dynamics
-- Physical-based Simulation
-<!-- - Constrained Optimization -->
-- Visual Servoing
