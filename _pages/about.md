@@ -34,7 +34,7 @@ Apart from my research habit, I enjoy hiking, backpacking and skiing.
 {% include figure.html path="assets/img/research_focus.png" title="research_focus" style="width:50%;float: right" align="right" %}
 - Robotic Modeling, Control and Dynamics
 - Physical-based Simulation
-<!-- - Constrained Optimization -->
+- Constrained Optimization
 - Visual Servoing
 
 #### Applications
