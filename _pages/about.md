@@ -34,11 +34,10 @@ Apart from my research habit, I enjoy hiking, backpacking and skiing.
 ### Research Focus
 {% include figure.html path="assets/img/research_focus.png" title="research_focus" style="width:50%;float: right" align="right" %}
 - Modeling and Control
-- Dynamics
-- Visual Servoing
 - Physical-based Simulation
 - Medical Robots and Systems
 - Surgical Robotics
 - Autonomy for Mobility and Manipulation
 - Constrained Optimization
-- Mechatronics
+- Mechatronics and Dynamics
+- Visual Servoing
