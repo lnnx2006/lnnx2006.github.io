@@ -2,12 +2,15 @@
 layout: page
 permalink: /publications/
 title: publications
-description: \* denotes equal contribution
+description:
 years: [2023, 2022, 2021, 2020, 2019, 2016, 2015, 2012]
 nav: true
 nav_order: 1
 ---
 <!-- _pages/publications.md -->
+
+
+<p style="font-family:courier;color:#E96357">* denotes equal contribution.</p>
 
 <script>
 function filterSubject(filter) {
