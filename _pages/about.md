@@ -41,3 +41,5 @@ Apart from my research habit, I enjoy hiking, backpacking and skiing.
 - Surgical Robotics
 - Robotic Autonomy and Manipulation
 - Mechatronics 
+
+{% include figure.html path="assets/img/robots.png" title="research_focus" style="width:100%"%}
