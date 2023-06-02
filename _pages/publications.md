@@ -51,7 +51,7 @@ function filterSubject(filter) {
 This is a list of my publications in reverse-chronological order. You can use the buttons below to filter according to the type of publication.
 
 <center>
-<abbr class="{{site.data.badge_colors['lightgrey']}}" onclick="filterSubject('')" style="cursor: pointer;">all</abbr>&ensp;
+<abbr class="{{site.data.badge_colors['color_all']}}" onclick="filterSubject('')" style="cursor: pointer;">all</abbr>&ensp;
 <abbr class="{{site.data.badge_colors['color_jour']}}" onclick="filterSubject('journal')" style="cursor: pointer;">journal</abbr>&ensp;
 <abbr class="{{site.data.badge_colors['color_conf']}}" onclick="filterSubject('conference')" style="cursor: pointer;">conference</abbr>&ensp;
 <abbr class="{{site.data.badge_colors['color_others']}}" onclick="filterSubject('others')" style="cursor: pointer;">others</abbr>
