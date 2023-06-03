@@ -27,7 +27,7 @@ My research interests span several areas, including modeling, control, dynamics,
 
 For further information about my background and research contributions, please refer to my [publications](/publications/) page or my comprehensive [CV](/cv/).
 
-Apart from my research habit, I enjoy hiking, backpacking and skiing.
+Apart from my research, I enjoy hiking, backpacking and skiing.
 
 {% include figure.html path="assets/img/research_focus.png" title="research_focus" style="width:50%;float: right" align="right" %}
 #### Research Interests
