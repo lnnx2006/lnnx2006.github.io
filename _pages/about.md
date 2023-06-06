@@ -25,7 +25,7 @@ In addition, I have worked as a senior control engineer and project manager for 
 
 My research interests span several areas, including modeling, control, dynamics, planning, simulation, and optimization, as well as sensor perception, signal processing, and computer vision. I have published numerous papers in high-impact journals and conferences, and my research has made significant contributions to both academia and industry.
 
-For further information about my background and research contributions, please refer to my [publications](/publications/) page or my comprehensive [CV](/cv/).
+For further information about my background and research contributions, please refer to my [publications](/publications/) or my [CV](/cv/).
 
 Apart from my research, I enjoy hiking, backpacking and skiing.
 
