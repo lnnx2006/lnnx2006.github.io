@@ -23,20 +23,20 @@ Prior to this, I held research positions at the [Biorobotics Institute](https://
 
 In addition, I have worked as a senior control engineer and project manager for [ROBO Medical Co., Ltd.](http://en.docrobo.com/), a start-up company specializing in the creation of robots for endoscopic submucosal dissection (ESD) surgery.
 
-My research interests span several areas, including modeling, control, dynamics, planning, simulation, and optimization, as well as sensor perception, signal processing, and computer vision. I have published numerous papers in high-impact journals and conferences, and my research has made significant contributions to both academia and industry.
+My research interests span several areas, including **modeling, control, dynamics, planning, simulation, and optimization**, as well as **sensor perception, machine learning, and computer vision**.
 
 For further information about my background and research contributions, please refer to my [publications](/publications/) or my [CV](/cv/).
 
 Apart from my research, I enjoy hiking, backpacking and skiing.
 
 {% include figure.html path="assets/img/research_focus.png" title="research_focus" style="width:50%;float: right" align="right" %}
-#### Research Interests
+#### 	**Research Interests**
 - Robotic Modeling, Control and Dynamics
 - Physical-based Simulation
-- Constrained Optimization
-- Visual Servoing
+- Optimization and High-performance Computing
+- Machine Learning
 
-#### Applications
+#### **Applications**
 - Medical Robots and Systems
 - Surgical Robotics
 - Robotic Autonomy and Manipulation
