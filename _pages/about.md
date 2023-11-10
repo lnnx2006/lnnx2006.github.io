@@ -30,7 +30,7 @@ My research interests lie at the intersection of **robotics and control theory**
   - visual servoing 
   - human-in-the-loop control
   - decision making with AI
-- **Integrated real-time embedded system and hardware/software platforms co-design.**
+- **Integrated real-time robotic system and hardware/software platforms co-design.**
 
     
 <!-- #### 	**Research Interests**
