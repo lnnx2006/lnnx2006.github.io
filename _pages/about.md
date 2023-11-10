@@ -17,10 +17,15 @@ social: true  # includes social icons at the bottom of the page
 
 I'm currently a postdoctoral researcher at the [Advanced Robotics and Controls Lab](https://www.ucsdarclab.com/) at the University of California San Diego, mentored by [Prof. Michael Yip](https://yip.eng.ucsd.edu/). Before this role, I conducted research at the [Biorobotics Institute](https://www.santannapisa.it/en/institute/biorobotics) with [Prof. Filippo Cavallo](https://scholar.google.it/citations?user=4qiWy0MAAAAJ&hl=en) and at the Center for [Bioinspired Soft Robotics](https://bsr.iit.it/) at the Italian Institute of Technology (IIT), Italy. My Ph.D. was completed at INSA de Lyon, a top ranked French engineering university, under the guidance of [Prof. Arnaud Lelevé](https://scholar.google.fr/citations?user=ViL8uI8AAAAJ&hl=fr). I also have experience as a senior control engineer and project manager at [ROBO Medical Co., Ltd.](http://en.docrobo.com/), a startup specializing in creating robots for endoscopic submucosal dissection (ESD) surgery.
 
-My current research focuses on the development of robotic autonomy for biomedical applications, encompass various domains including **modeling, control, dynamics, planning, simulation, and optimization**, as well as **sensor perception, machine learning, and computer vision**.
+My research interests lie at the intersection of **robotics and control theory**, encompassing computational modeling, advanced control, AI, and integrated hardware/software for robotic autonomy. I focus on applying these in unstructured environments, including biomedical, manufacturing, industrial, natural, and household settings.
 
 {% include figure.html path="assets/img/research_focus.png" title="research_focus" style="width:50%;float: right" align="right" %}
-#### 	**Research Interests**
+- **Computational Modeling**: includes mechanics, kinematics, dynamics, physics-informed simulation and constrained optimization.
+- **Advanced Control and AI**: model-based and data-driven control, decision making, visual perception, human-in-the-loop.
+- **Integrated real-time embedded system and hardware/software platforms co-design.**
+
+    
+<!-- #### 	**Research Interests**
 - Robotic Modeling, Control and Dynamics
 - Physical-based Simulation
 - Optimization and High-performance Computing
@@ -30,6 +35,6 @@ My current research focuses on the development of robotic autonomy for biomedica
 - Medical Robots and Systems
 - Surgical Robotics
 - Robotic Autonomy and Manipulation
-- Mechatronics 
+- Mechatronics  -->
 
 {% include figure.html path="assets/img/robots.png" title="research_focus" style="width:100%"%}
