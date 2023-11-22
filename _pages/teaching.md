@@ -84,6 +84,7 @@ horizontal: false
 - **Topic**: Simulation of haptic systems using CHAI3D
 - **Achievement**: Demos with simulation in CHAI3D
 
+<br/><br/>
 
 ## High School Students
 
