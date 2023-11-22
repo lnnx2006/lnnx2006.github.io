@@ -19,7 +19,7 @@ I'm currently a postdoctoral researcher at the [Advanced Robotics and Controls L
 
 My research interests lie at the intersection of **robotics and control theory**, encompassing computational modeling, advanced control, AI, and integrated hardware/software for robotic autonomy. I focus on applying these in unstructured environments, including biomedical, manufacturing, industrial, natural, and household settings.
 
-{% include figure.html path="assets/img/research_focus.png" title="research_focus" style="width:35%;float: right" align="right" %}
+{% include figure.html path="assets/img/research_focus.png" title="research_focus" style="width:38%;float: right" align="right" %}
 - **Computational Modeling**: 
   - mechanics
   - kinematics and dynamics
@@ -30,7 +30,10 @@ My research interests lie at the intersection of **robotics and control theory**
   - visual servoing 
   - human-in-the-loop control
   - decision making with AI
-- **Integrated real-time robotic system and hardware/software platforms co-design.**
+- **Integrated Embedded and Real-Time System**: 
+  - accelerated computing
+  - cyber-physical systems
+  - mechatronics
 
     
 <!-- #### 	**Research Interests**
