@@ -28,6 +28,9 @@ horizontal: false
 ##### [Chung-Pang (Ben) Wang](https://www.linkedin.com/in/chung-pang-wang-62a449246/), CSE, UCSD, 2023-now
 - **Topic**: SE(3)-Equivariant mappings for data-efficient learning of robot trajectory planning
 
+##### [Kaiyuan Wang](https://kylewang1999.github.io/), CSE, UCSD, 2023-now
+- **Topic**: A robust long-term deformation tracking and reconstruction framework for endoscopic videos
+
 ##### [Wangyi Liu](https://www.linkedin.com/in/wangyi-liu-768368212/), ECE, UCSD, 2022-2023
 - **Topic**: SE(3)-Equivariant mappings for data-efficient learning of robot trajectory planning
 - **Achievement**: Working on a paper for IEEE-RAL
@@ -54,10 +57,6 @@ horizontal: false
 
 ##### [Zihan Li](https://www.linkedin.com/in/zayn-zihan-li/), ECE, UCSD, 2020
 - **Topic**: Registration method for real-to-sim transfer applications of deformable tissue manipulation
-- **Achievement**: Published a paper at ***ICRA 2021***
-
-##### [Jingbin Huang](https://www.linkedin.com/in/jingbinhuang/), ECE, UCSD, 2020
-- **Topic**: Modeling and control of surgical tool for suction based simulation of blood fluid
 - **Achievement**: Published a paper at ***ICRA 2021***
 
 ##### [Jingbin Huang](https://www.linkedin.com/in/jingbinhuang/), ECE, UCSD, 2020
