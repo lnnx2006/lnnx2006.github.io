@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Mentoring
+title: Mentorship
 permalink: /projects/
 description: My awesome students and their projects!
 nav: true
