@@ -25,18 +25,20 @@ My research interests lie at the intersection of **robotics, autonomous systems,
   - kinematics and dynamics
   - physics-informed simulation 
   - constrained optimization
-- **Advanced Control and AI**: 
+- **Advanced ControlAI**: 
   - model-based and data-driven control
   - inverse problems 
   - motion planning
   - manipulation
   - predictive control
-- **Integrated Embedded and Real-Time System**: 
+  - stochastic control
+- **Integrated Embedded and Real-Time AI System**: 
   - mechatronics
+  - computer vision and servoing
   - accelerated computing
   - cyber-physical systems
-  - computer vision and servoing
-  - adaptive learning and neural networks
+  - adaptive learning 
+  - deep neural networks
   - cyber-physical systems
 
     
