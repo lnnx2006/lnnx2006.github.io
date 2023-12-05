@@ -25,7 +25,7 @@ My research interests lie at the intersection of **robotics, autonomous systems,
   - kinematics and dynamics
   - physics-informed simulation 
   - constrained optimization
-- **Advanced ControlAI**: 
+- **Advanced Control**: 
   - model-based and data-driven control
   - inverse problems 
   - motion planning
