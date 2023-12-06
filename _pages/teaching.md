@@ -71,7 +71,7 @@ horizontal: false
 - **Topic**: Dynamic model of rope-like objects using cosserat rod theory and surgical thread reconstruction
 - **Achievement**: Published a paper at ***ICRA 2023***
 
-##### [Tina Li](https://www.linkedin.com/in/neelay-joglekar-1848561b3/), Mathematics, UCSD, 2023-now
+##### Tina Li, Mathematics, UCSD, 2023-now
 - **Topic**: Learning an intrinsic neural mappings from mesh to point cloud for registration of soft tissue
 - **Achievement**: Submitted a paper to ***ICRA 2024***
 
