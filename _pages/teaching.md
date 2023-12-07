@@ -36,8 +36,8 @@ horizontal: false
 - **Achievement**: Working on a paper for IEEE-RAL
 
 ##### [Alexander Luke](https://www.linkedin.com/in/alexandercluke/), MAE, UCSD, 2021-2023
-- **Topic**: Motion control and calibration of a steerable continuum robotic catheter with clinical trails
-- **Achievement**: Demos with animals trails
+- **Topic**: Motion control and calibration of a steerable continuum robotic catheter with clinical trials
+- **Achievement**: Demos with animals trials
 
 ##### Chong He, MAE, UCSD, 2021-2022
 - **Topic**: Shape reconstruction of catheter robot using monocular images
@@ -53,7 +53,7 @@ horizontal: false
 
 ##### [Harleen Singh](https://www.linkedin.com/in/harleen-singh/), ECE, UCSD, 2020-2021
 - **Topic**: Modeling of the catheter continuum robot for position and orientation motor control
-- **Achievement**: Demos with live animals trails
+- **Achievement**: Demos with live animals trials
 
 ##### [Zihan Li](https://www.linkedin.com/in/zayn-zihan-li/), ECE, UCSD, 2020
 - **Topic**: Registration method for real-to-sim transfer applications of deformable tissue manipulation
