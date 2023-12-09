@@ -42,11 +42,31 @@ Thanks to the differentiable property with ready-to-use gradients using our PBD 
 
 <table width="876">
 	<tr>
-		<td width="438">
-			<iframe width="437" height="245" src="https://www.youtube.com/embed/RTl-egsjKvM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+		<td width="500">
+			<iframe width="500" height="280" src="https://www.youtube.com/embed/RTl-egsjKvM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
 		</td>
-		<td width="438">
-			<iframe width="437" height="245" src="https://www.youtube.com/embed/ytIRd9gfiQE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+		<td width="500">
+			<iframe width="500" height="280" src="https://www.youtube.com/embed/ytIRd9gfiQE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+		</td>
+	</tr>
+</table>
+
+<br/><br/>
+
+## Integrated Robotic System and Autonomy
+Building upon prior contributions in modeling and control, a focus has been placed on **integrating system autonomy across various hardware-specific robotic platforms**. The autonomy levels, as outlined in review papers on robotics, encompass teleoperation control (low-level), shared control (middle-level), trade control (middle-level), supervisory control (middle-level), and fully autonomous control (high-level). Despite variations in the mechanical designs of classical articulated robots, differing in structure and pattern, diverse autonomy levels for each robot can consistently be created by adhering to the modeling of kinematics and dynamics, as well as planning and control. Relevant contributions can be identified in autonomous navigation for a non-holonomic mobile robot, navigation control of a low-cost quad-rotor robot, robotic projectile launch tasks, and teleoperation control for a hydraulic-driven underwater robotic arm.
+
+Recent years have witnessed the development of advanced robotic designs for continuum robots, soft robots, and haptic devices. Continuum robots, with their adaptive mechanism and more dexterous pattern, have emerged as a viable alternative to traditional rigid-link manipulators. The introduction of soft material fabrication for continuum robots facilitates environment-compliant interaction. Addressing the kinematic redundancy of continuum soft robots for autonomous planning and navigation, the shape reconstruction method developed is crucial for precise and reliable motion control, requiring only monocular images and no additional sensors.
+
+Haptics, as another critical area for shared autonomy (in middle-level), aims to provide force/torque feedback to the human user. This is particularly relevant for enhancing operational safety in collaborative and unstructured workspaces, such as in surgical robots. The Ph.D. Dissertation focused on developing a dual-user haptic system dedicated to medical training usage. Haptics and shared control approaches were employed to establish a safe human-robot interaction framework. Utilizing an energetic approach (port-Hamiltonian modeling), the system architecture was extended to account for distributed time delays. In summary, autonomy has been implemented in both traditional and innovatively designed robots through hardware-specific modeling and control.
+
+<table width="1000">
+	<tr>
+		<td width="500">
+			<iframe width="500" height="280" src="https://www.youtube.com/embed/k4-E4F91VGk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+		</td>
+		<td width="500">
+			<iframe width="500" height="280" src="https://www.youtube.com/embed/M18yemz-KhQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
 		</td>
 	</tr>
 </table>
