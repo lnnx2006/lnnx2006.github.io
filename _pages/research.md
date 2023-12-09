@@ -15,21 +15,21 @@ The focus of this work is on the **modeling and simulation of robotic scenes in 
 
 The unified simulation and modeling approach has been applied, particularly in surgical contexts. This application extends to surgical tools such as da Vinci Research Kit robotic tools, deformable volumes, soft tissue, and viscous fluids like blood. In the context of surgical navigation and manipulation tasks, particle-based tool-tissue interaction modeling with 2D mesh structures has been considered. For general robotics applications, various structural objects with different types of geometrical constraints have been modeled to capture physical effects. For instance, in rope manipulation, universal particle-based modeling with serial-linked robotic manipulators has been employed. Safety constraints have also been taken into account for cloth trajectory optimization. Additionally, geometrical models like Bézier curves for soft robots and polynomial splines for surgical threads have been used, both of which can be easily formalized into curve-based constraints with discrete sets of particles representing thin structural objects. In summary, the proposed physics-based modeling approach can represent a broad spectrum of multi-stiffness objects and tools for dexterous manipulation, as well as robot modeling from rigid to soft structures.
 
-<table width="1000">
+<table width="920">
 	<tr>
-		<td width="500">
-			<iframe width="500" height="280" src="https://www.youtube.com/embed/hTN-ttMhpcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+		<td width="460">
+			<iframe width="460" height="258" src="https://www.youtube.com/embed/hTN-ttMhpcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
 		</td>
-		<td width="500">
-			<iframe width="500" height="280" src="https://www.youtube.com/embed/DxUhwZvWw-k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+		<td width="460">
+			<iframe width="460" height="258" src="https://www.youtube.com/embed/DxUhwZvWw-k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
 		</td>
 	</tr>
   <tr>
-		<td width="500">
-			<iframe width="500" height="280" src="https://www.youtube.com/embed/fVEAxvItFmw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+		<td width="460">
+			<iframe width="460" height="258" src="https://www.youtube.com/embed/fVEAxvItFmw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
 		</td>
-		<td width="500">
-			<iframe width="500" height="280" src="https://www.youtube.com/embed/io_XUctuXc8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+		<td width="460">
+			<iframe width="460" height="258" src="https://www.youtube.com/embed/io_XUctuXc8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
 		</td>
 	</tr>
 </table>
@@ -41,13 +41,13 @@ The characterization of **advanced planning, control and learning modules for in
 
 Thanks to the differentiable property with ready-to-use gradients using our PBD modeling approach, several downstream robotic applications are carried out, including impedance control and trajectory planning of compliant serial elastic Baxter arms, shape control of linear-deformable objects, trajectory optimization of cloth, and blood fluid with trajectory planning and model-predictive control (MPC). More significantly, our framework can be transferred to *real-to-sim/sim-to-real* experimental setups, closing the "gap" between the simulated systems from real-world cases. I've made an attempt to build an online, continuous, *real-to-sim* registration method for 3D visual perception (surface point cloud) and physics-based PBD simulation (volumetric mesh). The application is soft tissue manipulation using da Vinci surgical tools. To summarize, my work has a high potential for efficiently solving model-based or data-driven control/planning problems with a differentiable optimization formulation. Additionally, many control policies can be trained in an end-to-end fashion using learning approaches, such as our work on 4D lung motion prediction, scene reconstruction.
 
-<table width="876">
+<table width="920">
 	<tr>
-		<td width="500">
-			<iframe width="500" height="280" src="https://www.youtube.com/embed/RTl-egsjKvM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+		<td width="460">
+			<iframe width="460" height="258" src="https://www.youtube.com/embed/RTl-egsjKvM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
 		</td>
-		<td width="500">
-			<iframe width="500" height="280" src="https://www.youtube.com/embed/ytIRd9gfiQE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+		<td width="460">
+			<iframe width="460" height="258" src="https://www.youtube.com/embed/ytIRd9gfiQE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
 		</td>
 	</tr>
 </table>
@@ -61,13 +61,13 @@ Recent years have witnessed the development of advanced robotic designs for cont
 
 Haptics, as another critical area for shared autonomy (in middle-level), aims to provide force/torque feedback to the human user. This is particularly relevant for enhancing operational safety in collaborative and unstructured workspaces, such as in surgical robots. The Ph.D. Dissertation focused on developing a dual-user haptic system dedicated to medical training usage. Haptics and shared control approaches were employed to establish a safe human-robot interaction framework. Utilizing an energetic approach (port-Hamiltonian modeling), the system architecture was extended to account for distributed time delays. In summary, autonomy has been implemented in both traditional and innovatively designed robots through hardware-specific modeling and control.
 
-<table width="1000">
+<table width="920">
 	<tr>
-		<td width="500">
-			<iframe width="500" height="280" src="https://www.youtube.com/embed/k4-E4F91VGk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+		<td width="460">
+			<iframe width="460" height="258" src="https://www.youtube.com/embed/k4-E4F91VGk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
 		</td>
-		<td width="500">
-			<iframe width="500" height="280" src="https://www.youtube.com/embed/M18yemz-KhQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+		<td width="460">
+			<iframe width="460" height="258" src="https://www.youtube.com/embed/M18yemz-KhQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
 		</td>
 	</tr>
 </table>
