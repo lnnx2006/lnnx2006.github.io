@@ -43,7 +43,7 @@ My research interests lie at the intersection of **robotics, autonomous systems,
   - cyber-physical systems
 
 <br/><br/>
-## The robots I've been working on ...
+<!-- ## The robots I've been working on ...
 <table width="920">
 	<tr>
 		<td width="200">
@@ -75,8 +75,7 @@ My research interests lie at the intersection of **robotics, autonomous systems,
 			<p><img src="/assets/img/robots/catheter.png" alt="" style="border: 10px" /></p>
 		</td>
 	</tr>
-</table>
-
+</table> -->
 
 <!-- <div class="row">
     <div class="col-sm mt-4 mt-md-0">
@@ -119,4 +118,4 @@ My research interests lie at the intersection of **robotics, autonomous systems,
 - Robotic Autonomy and Manipulation
 - Mechatronics  -->
 
-<!-- {% include figure.html path="assets/img/robots.png" title="research_focus" style="width:100%"%} -->
+{% include figure.html path="assets/img/robots.png" title="research_focus" style="width:80%"%}
