@@ -42,6 +42,37 @@ My research interests lie at the intersection of **robotics, autonomous systems,
   - deep neural networks
   - cyber-physical systems
 
+<br/><br/>
+## The robots I've been working on ...
+<div class="row">
+    <div class="col-sm mt-4 mt-md-0">
+        {% include figure.html path="assets/img/robots/dvrk.png" title="surgical robot (dvrk)" caption="surgical/healthcare" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-4 mt-md-0">
+        {% include figure.html path="assets/img/robots/continuum.png" title="continuum robot" caption="continuum" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-4 mt-md-0">
+        {% include figure.html path="assets/img/robots/soft.png" title="soft robot" caption="soft" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-4 mt-md-0">
+        {% include figure.html path="assets/img/robots/haptics.png" title="haptic devices" caption="haptic" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm mt-4 mt-md-0">
+        {% include figure.html path="assets/img/robots/manipulator.png" title="manipulation arm" caption="manipulator" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-4 mt-md-0">
+        {% include figure.html path="assets/img/robots/mobile_car.png" title="mobile car" caption="mobile car" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-4 mt-md-0">
+        {% include figure.html path="assets/img/robots/underwater.png" title="underwater robot" caption="underwater" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-4 mt-md-0">
+        {% include figure.html path="assets/img/robots/catheter.png" title="catheter robot" caption="catheter" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
     
 <!-- #### 	**Research Interests**
 - Robotic Modeling, Control and Dynamics
@@ -55,4 +86,4 @@ My research interests lie at the intersection of **robotics, autonomous systems,
 - Robotic Autonomy and Manipulation
 - Mechatronics  -->
 
-{% include figure.html path="assets/img/robots.png" title="research_focus" style="width:100%"%}
+<!-- {% include figure.html path="assets/img/robots.png" title="research_focus" style="width:100%"%} -->
