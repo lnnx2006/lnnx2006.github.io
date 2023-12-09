@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Mentorship
-permalink: /projects/
+permalink: /teaching/
 description: My awesome students and their projects!
 nav: true
 nav_order: 1

@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Projects
-permalink: /projects/
+title: Research
+permalink: /research/
 description: The summary of my projects.
 nav: true
 nav_order: 1
@@ -26,6 +26,23 @@ The unified simulation and modeling approach has been applied, particularly in s
   <tr>
 		<td width="438">
 			<iframe width="437" height="245" src="https://youtu.be/DxUhwZvWw-k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+		</td>
+		<td width="438">
+			<iframe width="437" height="245" src="https://youtu.be/fVEAxvItFmw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+		</td>
+	</tr>
+</table>
+
+
+## Advanced Planning, Control and Learning
+The characterization of **advanced planning, control and learning modules for integration into the robotic system** is another crucial area of my past research. In particular, my recently developed positional constraints-based multi-body dynamics (PBD) framework can solve state-of-the-art control problems. More importantly, it supports arbitrary differentiation for an objective function with respect to all physical variables involving control input, system states, initial conditions and parameters etc. Therefore, many robotic inverse problems (such as parameter identification, motion control and planning, and trajectory optimization) can be formulated into constrained minimization solutions where the state variables are subject to equality and inequality constraints derived from physical principles. 
+
+Thanks to the differentiable property with ready-to-use gradients using our PBD modeling approach, several downstream robotic applications are carried out, including impedance control and trajectory planning of compliant serial elastic Baxter arms, shape control of linear-deformable objects, trajectory optimization of cloth, and blood fluid with trajectory planning and model-predictive control (MPC). More significantly, our framework can be transferred to *real-to-sim/sim-to-real* experimental setups, closing the "gap" between the simulated systems from real-world cases. I've made an attempt to build an online, continuous, *real-to-sim* registration method for 3D visual perception (surface point cloud) and physics-based PBD simulation (volumetric mesh). The application is soft tissue manipulation using da Vinci surgical tools. To summarize, my work has a high potential for efficiently solving model-based or data-driven control/planning problems with a differentiable optimization formulation. Additionally, many control policies can be trained in an end-to-end fashion using learning approaches, such as our work on 4D lung motion prediction, scene reconstruction.
+
+<table width="876">
+	<tr>
+		<td width="438">
+			<iframe width="437" height="245" src="https://www.youtube.com/watch?v=X_UPhL_TjTI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
 		</td>
 		<td width="438">
 			<iframe width="437" height="245" src="https://youtu.be/fVEAxvItFmw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
