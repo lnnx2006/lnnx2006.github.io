@@ -20,15 +20,15 @@ The unified simulation and modeling approach has been applied, particularly in s
 			<iframe width="437" height="245" src="https://www.youtube.com/watch?v=hTN-ttMhpcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
 		</td>
 		<td width="438">
-			<iframe width="437" height="245" src="https://www.youtube.com/watch?v=ytIRd9gfiQE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+			<iframe width="437" height="245" src="https://youtu.be/DxUhwZvWw-k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
 		</td>
 	</tr>
   <tr>
 		<td width="438">
-			<iframe width="437" height="245" src="https://youtu.be/DxUhwZvWw-k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+			<iframe width="437" height="245" src="https://youtu.be/fVEAxvItFmw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
 		</td>
 		<td width="438">
-			<iframe width="437" height="245" src="https://youtu.be/fVEAxvItFmw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+			<iframe width="437" height="245" src="https://www.youtube.com/watch?v=X_UPhL_TjTI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
 		</td>
 	</tr>
 </table>
@@ -42,10 +42,10 @@ Thanks to the differentiable property with ready-to-use gradients using our PBD 
 <table width="876">
 	<tr>
 		<td width="438">
-			<iframe width="437" height="245" src="https://www.youtube.com/watch?v=X_UPhL_TjTI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+			<iframe width="437" height="245" src="https://youtu.be/RTl-egsjKvM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
 		</td>
 		<td width="438">
-			<iframe width="437" height="245" src="https://youtu.be/fVEAxvItFmw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+			<iframe width="437" height="245" src="https://www.youtube.com/watch?v=ytIRd9gfiQE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
 		</td>
 	</tr>
 </table>
