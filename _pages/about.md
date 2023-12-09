@@ -42,7 +42,6 @@ My research interests lie at the intersection of **robotics, autonomous systems,
   - deep neural networks
   - cyber-physical systems
 
-<br/><br/>
 <!-- ## The robots I've been working on ...
 <table width="920">
 	<tr>
