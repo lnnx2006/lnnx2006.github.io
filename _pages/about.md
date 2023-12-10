@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <tt>f4liu (at) eng.ucsd.edu </tt>
+subtitle: <tt>f4liu (at) ucsd.edu </tt>
 
 profile:
   align: right
