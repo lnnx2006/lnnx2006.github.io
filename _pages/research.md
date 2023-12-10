@@ -73,3 +73,18 @@ Haptics, as another critical area for shared autonomy (in middle-level), aims to
 		</td>
 	</tr>
 </table>
+
+
+## Computer Vision based Perception and Reconstruction
+The integration of 3D scene reconstruction and tracking represents a critical advancement in the realm of autonomous robotic perception, particularly in the context of unstructured environments. Addressing challenges posed by large deformations and the intricacies of texture-less, moistured tissue, and instrument surfaces is imperative for robust and accurate robotic systems. This research delves into the intricacies of scene understanding, path planning, and navigation, emphasizing the pivotal role played by advanced perception techniques. Beyond the specific application in autonomous surgery, the outcomes of this research hold promise for contributing to the broader landscape of robotics research, enhancing adaptability and autonomy across various domains where robotic platforms operate in complex and dynamic environments. As we navigate the intricacies of unstructured scenarios, the integration of cutting-edge 3D scene reconstruction and tracking methodologies stands at the forefront of shaping the future capabilities of autonomous robotic systems.
+
+<table width="920">
+	<tr>
+		<td width="460">
+			<iframe width="460" height="258" src="https://www.youtube.com/embed/tkWgFObuS4w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+		</td>
+		<td width="460">
+			<iframe width="460" height="258" src="https://www.youtube.com/embed/4Z9up1Pdqxk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+		</td>
+	</tr>
+</table>
