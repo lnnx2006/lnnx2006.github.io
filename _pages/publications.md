@@ -48,7 +48,7 @@ function filterSubject(filter) {
 }
 </script>
 
-This is a list of my publications in reverse-chronological order. 
+<!-- This is a list of my publications in reverse-chronological order.  -->
 <!-- You can use the buttons below to filter according to the type of publication. -->
 
 <!-- <center>
