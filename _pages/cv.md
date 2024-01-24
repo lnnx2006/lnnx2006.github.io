@@ -1,12 +1,18 @@
 ---
 layout: page
 permalink: /cv/
-title: Resume
+title: About
 description:
 nav: true
 ---
+Please check my detailed <a href='/assets/pdf/FeiLiu_CV_EN.pdf'>CV</a>.
 
-If the embedded version below does not work, you can download a copy <a href='/assets/pdf/FeiLiu_CV_EN.pdf'>here</a>.
+This is a 16-min video presentation of my research, teaching, service & DEI for perspective professorship.
+
+<iframe width="720" height="576" src="https://www.youtube.com/embed/zcZDbzwfKJ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+
+
+<!-- If the embedded version below does not work, you can download a copy <a href='/assets/pdf/FeiLiu_CV_EN.pdf'>here</a>.
 <object data="/assets/pdf/FeiLiu_CV_EN.pdf#view=FitH&pagemode=none" type="application/pdf" style="width:100%;height:100vh">
 	<embed src="/assets/pdf/FeiLiu_CV_EN.pdf#view=FitH&pagemode=none" type="application/pdf" />
-</object> 
+</object>  -->
