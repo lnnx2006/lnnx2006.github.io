@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /about/
+permalink: /cv/
 title: About
 description:
 nav: true
