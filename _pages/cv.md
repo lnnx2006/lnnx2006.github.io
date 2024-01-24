@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /cv/
+permalink: /about/
 title: About
 description:
 nav: true
@@ -9,7 +9,13 @@ Please check my detailed <a href='/assets/pdf/FeiLiu_CV_EN.pdf'>CV</a>.
 
 This is a 16-min video presentation of my research, teaching, service & DEI for perspective professorship.
 
-<iframe width="720" height="576" src="https://www.youtube.com/embed/zcZDbzwfKJ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+<table width="720">
+	<tr>
+		<td width="720">
+			<iframe width="720" height="576" src="https://www.youtube.com/embed/zcZDbzwfKJ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+		</td>
+	</tr>
+</table>
 
 
 <!-- If the embedded version below does not work, you can download a copy <a href='/assets/pdf/FeiLiu_CV_EN.pdf'>here</a>.
