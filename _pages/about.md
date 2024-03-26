@@ -37,7 +37,6 @@ My research interests lie at the intersection of **robotics, autonomous systems,
   - mechatronics
   - computer vision and servoing
   - accelerated computing
-  - cyber-physical systems
   - adaptive learning 
   - deep neural networks
   - cyber-physical systems
