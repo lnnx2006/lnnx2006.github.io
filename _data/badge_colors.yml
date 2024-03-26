@@ -1,8 +1,0 @@
-"red":       "badge badge-danger"
-"blue":      "badge badge-primary"
-"secondary":      "badge badge-secondary"
-"color_conf":     "badge badge-success"
-"warning":    "badge badge-warning"
-"color_others":      "badge badge-info"
-"color_jour": "badge badge-light"
-"color_all":  "badge badge-dark"
