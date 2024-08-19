@@ -128,7 +128,7 @@ kramdown:
 
 # Includes & excludes
 include: 
-  - ['_pages']
+  - _pages
   - _includes/ece517/index.html
 exclude:
   - bin
