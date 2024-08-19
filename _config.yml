@@ -127,13 +127,14 @@ kramdown:
       start_line: 1
 
 # Includes & excludes
-include: ['_pages']
+include: ['_pages', '_teaching']
 exclude:
   - bin
   - Gemfile
   - Gemfile.lock
   - vendor
   - _pages/projects.md
+  - _pages/gallery.md
 keep_files:
   - CNAME
   - .nojekyll
