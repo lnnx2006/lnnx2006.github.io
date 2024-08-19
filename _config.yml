@@ -129,7 +129,7 @@ kramdown:
 # Includes & excludes
 include: 
   - _pages
-  - teaching/ece517/index.html
+  - teaching/ece517_fall24
 exclude:
   - bin
   - Gemfile
