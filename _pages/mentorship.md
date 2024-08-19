@@ -4,7 +4,7 @@ title: Mentorship
 permalink: /mentorship/
 description: My awesome students and their projects!
 nav: true
-nav_order: 1
+nav_order: 3
 display_categories: 
 horizontal: false
 ---

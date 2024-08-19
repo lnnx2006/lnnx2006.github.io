@@ -1,12 +1,10 @@
 ---
 layout: page
-title: teaching
+title: Teaching
 nav: true
 nav_order: 4
 dropdown: true
 children:
-  - title: ece414_517
+  - title: ece414/517
     permalink: /teaching/ece517/
 ---
-
-{% include ece517/index.html %}
