@@ -7,6 +7,4 @@ nav: true
 nav_order: 4
 ---
 
-{% include ece517/index.html %}
-
 ## [ECE 414/517](https://lnnx2006.github.io/teaching/ece517/index.html)

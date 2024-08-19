@@ -127,7 +127,9 @@ kramdown:
       start_line: 1
 
 # Includes & excludes
-include: ['_pages']
+include: 
+  - ['_pages']
+  - _includes/ece517/index.html
 exclude:
   - bin
   - Gemfile
