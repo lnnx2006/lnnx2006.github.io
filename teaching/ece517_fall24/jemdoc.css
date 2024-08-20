@@ -129,7 +129,8 @@ strong {
 h1,
 h2,
 h3 {
-	color: #527bbd;
+	/* color: #527bbd; */
+	color: #FF8200;
 	margin-top: 0.7em;
 	margin-bottom: 0.3em;
 	padding-bottom: 0.2em;
