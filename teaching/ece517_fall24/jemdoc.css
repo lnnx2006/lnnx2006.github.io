@@ -68,7 +68,8 @@ a:hover {
 
 #layout-menu a.current:link,
 #layout-menu a.current:visited {
-	color: #022b6d;
+	/* color: #022b6d; */
+	color: #CD5C08;
 	border-bottom: 1px gray solid;
 }
 
@@ -76,7 +77,7 @@ a:hover {
 #layout-menu a:visited,
 #layout-menu a:hover {
 	/* color: #527bbd; */
-	color: #527bbd;
+	color: #FF8200;
 	text-decoration: none;
 }
 
