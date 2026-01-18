@@ -1,0 +1,1552 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <!-- Google Analytics -->
+  <!-- Google tag (gtag.js) -->
+  <script async
+          src="https://www.googletagmanager.com/gtag/js?id=G-5X8J72JD36"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-5X8J72JD36');
+
+    setTimeout("gtag('event', 'adjusted bounce rate', {'event_label':'more than 15 sec'})", 30000); 
+  </script>
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Required meta tags -->
+  <!-- https://fontawesome.com/cheatsheet -->
+  <link rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v6.7.2/css/all.css"
+        integrity="sha384-nRgPTkuX86pH8yjPJUAFuASXQSSl2/bBUiNV47vSYpKFxHJhbcrGnmlYpYJMeD7a"
+        crossorigin="anonymous">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons/css/academicons.min.css">
+
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Liu+Jian+Mao+Cao&display=swap"
+        rel="stylesheet">
+
+  <!-- loading jQuery first, then Tether, then Bootstrap JS. -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+          crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+          integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+          crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+        crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+          crossorigin="anonymous"></script>
+
+  <!-- Custom styles for this template -->
+  <link href="files/jumbotron.css"
+        rel="stylesheet">
+  <!-- <script src="js/pub_funs.js"></script> -->
+  <script src="files/functions.js"></script>
+  <!-- not used -->
+  <!-- <script src="js/main.js"></script> -->
+  <!-- <script src="js/scroll.js"></script> -->
+
+  <title>Publications</title>
+
+</head>
+
+
+<body>
+  <!-- <style>
+    body {
+      padding: 0;
+    }
+  </style> -->
+
+  <!-- body -->
+  <div class="container-fluid">
+    <div class="row justify-content-md-center">
+      <div class="col-12">
+
+        <!-- nav-bar -->
+        <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+          <div class="container-fluid"
+               style="width: 50%;">
+            <!-- Left-aligned brand -->
+            <a class="navbar-brand"
+               href="index.html">
+              <strong style="color:#ffffff">AURAS Lab</strong>
+            </a>
+
+            <!-- Navbar toggler for mobile view -->
+            <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Right-aligned navigation links -->
+            <div class="collapse navbar-collapse"
+                 id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto">
+                <!-- <ul class="navbar-nav ms-auto"> -->
+                <li class="nav-item">
+                  <a class="nav-link active"
+                     aria-current="page"
+                     href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active"
+                     aria-current="page"
+                     href="publication.html">Publications</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active"
+                     aria-current="page"
+                     href="index.html#teaching">Teaching</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active"
+                     aria-current="page"
+                     href="lab_members.html">Lab Members</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+
+        <div class="container-fluid"
+             style="width: 50%;">
+          <div class="row"
+               style="margin-top: 20px;">
+            <div id="pub-container">
+              <!-- <h5 class="subtitle">Publications
+                (
+                <a id="publication-by-selected"
+                   href="javascript:;"
+                   ,
+                   onClick="publicationBySelected();">show
+                  selected</a> /
+                <a id="publication-by-date"
+                   href="javascript:;"
+                   class="filter-link"
+                   onClick="publicationByDate();">show all by date</a> /
+                <a id="publication-by-topic"
+                   href="javascript:;"
+                   class="filter-link"
+                   onClick="publicationByTopic();">show all by topic</a>
+                )
+              </h5> -->
+
+              <p class="textsectionheader">
+                Publications
+                <!-- Use smaller font, color=blue by default. -->
+                <!-- <a href="index.html#"
+                   class="filter-link"
+                   id="showSelectedLink"
+                   onclick="event.preventDefault(); showSelectedPapers();">Show Selected</a> -->
+                <a href="index.html#"
+                   class="filter-link"
+                   id="showAllLink"
+                   onclick="event.preventDefault(); showAllPapers();">Show by Date</a>
+              </p>
+
+              <div class="topic-filters">
+                <button class="topic-btn active"
+                        onclick="filterByTopic('all')"
+                        id="topic-all">All Topics</button>
+                <button class="topic-btn"
+                        onclick="filterByTopic('surgical-robotics')"
+                        id="topic-surgical-robotics">Surgical Robotics</button>
+                <button class="topic-btn"
+                        onclick="filterByTopic('physical-simulation')"
+                        id="topic-physical-simulation">Physics-based Simulation</button>
+                <button class="topic-btn"
+                        onclick="filterByTopic('control-planning')"
+                        id="topic-control-planning">Control and Planning</button>
+                <button class="topic-btn"
+                        onclick="filterByTopic('spatial-intelligence')"
+                        id="topic-spatial-intelligence">Spatial Intelligence</button>
+                <button class="topic-btn"
+                        onclick="filterByTopic('embodied-ai')"
+                        id="topic-embodied-ai">Embodied AI</button>
+                <button class="topic-btn"
+                        onclick="filterByTopic('visual-understanding')"
+                        id="topic-visual-understanding">Visual Understanding</button>
+                <button class="topic-btn"
+                        onclick="filterByTopic('haptic-teleoperation')"
+                        id="topic-haptic-teleoperation">Haptic Teleoperation</button>
+                <button class="topic-btn"
+                        onclick="filterByTopic('patent')"
+                        id="topic-patent">Patents</button>
+                <br />
+                <!-- <span class="note">(*/†: indicates equal contribution.)</span> -->
+              </div>
+
+              <!-- ------------------------------ -->
+              <!-- Publication List -->
+              <!-- ------------------------------ -->
+              <div id="pub-card-container"
+                   class="activated hide">
+
+                <table style="border-collapse:separate; border-spacing:20px 40px; width:100%; table-layout:fixed;">
+
+                  <!-- ******************* -->
+                  <!-- a publication -->
+                  <!-- ******************* -->
+                  <tr class="paperrow"
+                      data-selected="false"
+                      data-topics="surgical-robotics,physical-simulation"
+                      style="list-style:none; margin:0; padding:0;">
+                    <td width="26%">
+                      <img alt="First-Order XPBD"
+                           class="papericon-soft"
+                           height="auto"
+                           src="image/pubs_preview/ctr_push_JMRR_2025.png"
+                           width="260">
+                      </img>
+                    </td>
+                    <td width="4%"></td>
+                    <td width="68%">
+                      <p class="papertext">
+                        <strong>First-Order Position Based Simulation of Deformable Concentric-Tube Robots Interacting
+                          with Tissue</strong><br />
+                        <a href="https://www.linkedin.com/in/sam-tobin-a8186a19a/">Samuel Tobin</a>;
+                        <a href="https://scholar.google.com/citations?user=cnRcFxIAAAAJ&hl=en">Yufei Wu</a>;
+                        <a class="highlighted-fei-name"
+                           href="https://lnnx2006.github.io">Fei Liu</a>;
+                        <a href="https://scholar.google.com/citations?user=swKSAGAAAAAJ&hl=en">Caleb Rucker</a>
+                        <br />
+                        <strong>Journal of Medical Robotics Research (JMRR)</strong>, 2025
+                        <br />
+                        <a href="https://www.worldscientific.com/doi/abs/10.1142/S2424905X26400039"
+                           class="btn custom-btn-blue custom-btn-small"
+                           role="button">
+                          <i class="fa fa-fw fa-file-pdf"></i> Paper</a>
+                      </p>
+                    </td>
+                  </tr>
+
+
+                  <!-- ******************* -->
+                  <!-- a publication -->
+                  <!-- ******************* -->
+                  <tr class="paperrow"
+                      data-selected="false"
+                      data-topics="surgical-robotics,physical-simulation"
+                      style="list-style:none; margin:0; padding:0;">
+                    <td width="26%">
+                      <img alt="Tracking-in-the-Loop Control"
+                           class="papericon-soft"
+                           height="auto"
+                           src="image/pubs_preview/Lumpe_error_control_2025.png"
+                           width="260">
+                      </img>
+                    </td>
+                    <td width="4%"></td>
+                    <td width="68%">
+                      <p class="papertext">
+                        <strong>Stable Tracking-in-the-Loop Control of Cable-Driven Surgical Manipulators under
+                          Erroneous Kinematic Chains</strong><br />
+                        <a href="https://www.linkedin.com/in/neelay-joglekar-1848561b3/">Neelay Joglekar</a>;
+                        <a class="highlighted-fei-name"
+                           href="https://lnnx2006.github.io">Fei Liu</a>;
+                        <a href="https://scholar.google.com/citations?user=HP3e2owAAAAJ&hl=en">Florian Richter</a>;
+                        <a href="https://yip.eng.ucsd.edu/">Michael Yip</a>
+                        <br />
+                        <strong>arXiv</strong>, 2025
+                        <br />
+                        <a href="https://arxiv.org/pdf/2507.05663"
+                           class="btn custom-btn-blue custom-btn-small"
+                           role="button">
+                          <i class="fa fa-fw fa-file-pdf"></i> PDF</a>
+                      </p>
+                    </td>
+                  </tr>
+
+
+                  <!-- ******************* -->
+                  <!-- a publication -->
+                  <!-- ******************* -->
+                  <tr class="paperrow"
+                      data-selected="true"
+                      data-topics="visual-understanding,surgical-robotics,control-planning,spatial-intelligence"
+                      style="list-style:none; margin:0; padding:0;">
+                    <td width="26%">
+                      <!-- <video class="papericon"
+                             height="auto"
+                             src="image/pubs_preview/ImageToGrasp_Thread_2025_RAL_Cover.png"
+                             width="240"
+                             autoplay
+                             muted
+                             loop
+                             playsinline
+                             preload="metadata"
+                             aria-label="CropCraft Thumbnail">
+                      </video> -->
+                      <img alt="Autonomous Image-to-Grasp"
+                           class="papericon-soft"
+                           height="auto"
+                           src="image/pubs_preview/ImageToGrasp_Thread_2025_RAL_Cover.png"
+                           width="260">
+                      </img>
+                    </td>
+                    <td width="4%"></td>
+                    <td width="68%">
+                      <p class="papertext">
+                        <strong>Autonomous Image-to-Grasp Robotic Suturing Using Reliability-Driven Suture
+                          Thread Reconstruction</strong><br />
+                        <a href="https://www.linkedin.com/in/neelay-joglekar-1848561b3/">Neelay Joglekar</a>;
+                        <a class="highlighted-fei-name"
+                           href="https://lnnx2006.github.io">Fei Liu</a>;
+                        <a href="https://scholar.google.com/citations?user=HP3e2owAAAAJ&hl=en">Florian Richter</a>;
+                        <a href="https://yip.eng.ucsd.edu/">Michael Yip</a>
+                        <br />
+                        <strong>IEEE Robotics and Automation Letters (R-AL)</strong>, 2025
+                        <br />
+                        <a href="https://ieeexplore.ieee.org/document/10900411"
+                           class="btn custom-btn-blue custom-btn-small"
+                           role="button">
+                          <i class="fa fa-fw fa-file-pdf"></i> Paper</a>
+                      </p>
+                    </td>
+                  </tr>
+
+
+                  <!-- ******************* -->
+                  <!-- a publication -->
+                  <!-- ******************* -->
+                  <tr class="paperrow"
+                      data-selected="false"
+                      data-topics="surgical-robotics,physical-simulation,control-planning,spatial-intelligence"
+                      style="list-style:none; margin:0; padding:0;">
+                    <td width="26%">
+                      <img alt="AutoPeel"
+                           class="papericon-soft"
+                           height="auto"
+                           src="image/pubs_preview/AutoPeel_2025_ICRA.png"
+                           width="260">
+                      </img>
+                    </td>
+                    <td width="4%"></td>
+                    <td width="68%">
+                      <p class="papertext">
+                        <strong>AutoPeel: Adhesion-aware Safe Peeling Trajectory Optimization For Robotic Wound
+                          Care</strong>
+                        <br />
+                        <a href="https://lancial.github.io/">Xiao Liang</a>;
+                        <a href="https://www.linkedin.com/in/youcheng-zhang-b376042aa/">Youcheng Zhang</a>;
+                        <a class="highlighted-fei-name"
+                           href="https://lnnx2006.github.io">Fei Liu</a>;
+                        <a href="https://scholar.google.com/citations?user=HP3e2owAAAAJ&hl=en">Florian Richter</a>;
+                        <a href="https://yip.eng.ucsd.edu/">Michael Yip</a>
+                        <br />
+                        <strong>IEEE International Conference on Robotics and Automation (ICRA)</strong>, 2025<br />
+                        <strong style="color:#FF8200;">(Best Paper Award Finalist)</strong><br />
+                        <a href="https://ieeexplore.ieee.org/abstract/document/11128373"
+                           class="btn custom-btn-blue custom-btn-small"
+                           role="button">
+                          <i class="fa fa-fw fa-file-pdf"></i> Paper</a>
+                      </p>
+                    </td>
+                  </tr>
+
+
+                  <!-- ******************* -->
+                  <!-- a publication -->
+                  <!-- ******************* -->
+                  <tr class="paperrow"
+                      data-selected="true"
+                      data-topics="surgical-robotics,physical-simulation,control-planning,embodied-ai,spatial-intelligence,physical-simulation"
+                      style="list-style:none; margin:0; padding:0;">
+                    <td width="26%">
+                      <img alt="MEDiC"
+                           class="papericon-soft"
+                           height="auto"
+                           src="image/pubs_preview/MEDiC_ICRA_2025.png"
+                           width="260">
+                      </img>
+                    </td>
+                    <td width="4%"></td>
+                    <td width="68%">
+                      <p class="papertext">
+                        <strong>MEDiC: Autonomous Surgical Robotic Assistance to Maximizing Exposure for Dissection and
+                          Cautery
+                        </strong>
+                        <br />
+                        <a href="https://lancial.github.io/">Xiao Liang</a>;
+                        <a href="https://fefei69.github.io/">Chung-Pang Wang</a>;
+                        <a href="https://scholar.google.com/citations?user=WMkkgJ0AAAAJ&hl=en">Nikhil Uday Shinde</a>;
+                        <a class="highlighted-fei-name"
+                           href="https://lnnx2006.github.io">Fei Liu</a>;
+                        <a href="https://scholar.google.com/citations?user=HP3e2owAAAAJ&hl=en">Florian Richter</a>;
+                        <a href="https://yip.eng.ucsd.edu/">Michael Yip</a>
+                        <br />
+                        <strong>IEEE International Conference on Robotics and Automation (ICRA)</strong>, 2025
+                        <br />
+                        <a href="https://ieeexplore.ieee.org/abstract/document/11128739"
+                           class="btn custom-btn-blue custom-btn-small"
+                           role="button">
+                          <i class="fa fa-fw fa-file-pdf"></i> Paper</a>
+                      </p>
+                    </td>
+                  </tr>
+
+
+                  <!-- ******************* -->
+                  <!-- a publication -->
+                  <!-- ******************* -->
+                  <tr class="paperrow"
+                      data-selected="false"
+                      data-topics="surgical-robotics,physical-simulation"
+                      style="list-style:none; margin:0; padding:0;">
+                    <td width="26%">
+                      <img alt="ISMR: First-Order XPBD"
+                           class="papericon-soft"
+                           height="auto"
+                           src="image/pubs_preview/trachea_tumor_pull_ISMR_2025.png"
+                           width="260">
+                      </img>
+                    </td>
+                    <td width="4%"></td>
+                    <td width="68%">
+                      <p class="papertext">
+                        <strong>Efficient Steady-State Tissue Simulation for Surgical Robotics: A First-Order
+                          Position-Based Method</strong>
+                        <br />
+                        <a href="https://www.linkedin.com/in/sam-tobin-a8186a19a/">Samuel Tobin</a>;
+                        <a href="https://scholar.google.com/citations?user=cnRcFxIAAAAJ&hl=en">Yufei Wu</a>;
+                        <a class="highlighted-fei-name"
+                           href="https://lnnx2006.github.io">Fei Liu</a>;
+                        <a href="https://scholar.google.com/citations?user=swKSAGAAAAAJ&hl=en">Caleb Rucker</a>
+                        <br />
+                        <strong>International Symposium on Medical Robotics (ISMR)</strong>, 2025
+                        <br />
+                        <a href="https://ieeexplore.ieee.org/abstract/document/11025985"
+                           class="btn custom-btn-blue custom-btn-small"
+                           role="button">
+                          <i class="fa fa-fw fa-file-pdf"></i> Paper</a>
+                      </p>
+                    </td>
+                  </tr>
+
+
+                  <!-- ******************* -->
+                  <!-- a publication -->
+                  <!-- ******************* -->
+                  <tr class="paperrow"
+                      data-selected="false"
+                      data-topics="surgical-robotics,control-planning,embodied-ai,visual-understanding,spatial-intelligence"
+                      style="list-style:none; margin:0; padding:0;">
+                    <td width="26%">
+                      <img alt="TP_GMM_2025_ICRA_Workshop"
+                           class="papericon-soft"
+                           height="auto"
+                           src="image/pubs_preview/TP_GMM_2025_ICRA_Workshop.png"
+                           width="260">
+                      </img>
+                    </td>
+                    <td width="4%"></td>
+                    <td width="68%">
+                      <p class="papertext">
+                        <strong>Probabilistic Task Parameterization of Tool-Tissue Interaction via Sparse Landmarks
+                          Tracking in Robotic Surgery</strong>
+                        <br />
+                        <a href="https://scholar.google.com/citations?user=lIKSiD8AAAAJ">Yiting Wang</a>;
+                        <a href="https://www.linkedin.com/in/yunxin-fan-0b5ab1292/">Yunxin Fan</a>;
+                        <a class="highlighted-fei-name"
+                           href="https://lnnx2006.github.io">Fei Liu</a>
+                        <br />
+                        <strong>ICRA'25 Workshop of 3rd Robot-Assisted Medical Imaging</strong>, 2025
+                        <br />
+                        <a href="https://arxiv.org/pdf/2504.11495"
+                           class="btn custom-btn-blue custom-btn-small"
+                           role="button">
+                          <i class="fa fa-fw fa-file-pdf"></i> PDF</a>
+                      </p>
+                    </td>
+                  </tr>
+
+
+                  <!-- ******************* -->
+                  <!-- a publication -->
+                  <!-- ******************* -->
+                  <tr class="paperrow"
+                      data-selected="false"
+                      data-topics="control-planning,embodied-ai,spatial-intelligence,visual-understanding"
+                      style="list-style:none; margin:0; padding:0;">
+                    <td width="26%">
+                      <img alt="HumanRobotAlign_ICRA_2025_Workshop"
+                           class="papericon-soft"
+                           height="auto"
+                           src="image/pubs_preview/HumanRobotAlign_ICRA_2025_Workshop.png"
+                           width="260">
+                      </img>
+                    </td>
+                    <td width="4%"></td>
+                    <td width="68%">
+                      <p class="papertext">
+                        <strong>Toward Aligning Human and Robot Actions via Multi-Modal Demonstration Learning</strong>
+                        <br />
+                        <a href="https://scholar.google.com/citations?user=nTY1Y-AAAAAJ&hl=en">Azizul Zahid</a>;
+                        <a href="">Jie Fan</a>;
+                        <a href="https://www.linkedin.com/in/farong-wang-b8b367293/">Farong Wang</a>;
+                        <a href="">Ashton Dy</a>;
+                        <a href="https://scholar.google.com/citations?user=OYYNyjIAAAAJ&hl=en">Sai Swaminathan</a>;
+                        <a class="highlighted-fei-name"
+                           href="https://lnnx2006.github.io">Fei Liu</a>
+                        <br />
+                        <strong>ICRA'25 Workshop of Human-Centered Robot Learning in the Era of Big Data and Large
+                          Models</strong>, 2025
+                        <br />
+                        <a href="https://arxiv.org/abs/2504.11493"
+                           class="btn custom-btn-blue custom-btn-small"
+                           role="button">
+                          <i class="fa fa-fw fa-file-pdf"></i> PDF</a>
+                      </p>
+                    </td>
+                  </tr>
+
+
+                  <!-- ******************* -->
+                  <!-- a publication -->
+                  <!-- ******************* -->
+                  <tr class="paperrow"
+                      data-selected="false"
+                      data-topics="surgical-robotics,visual-understanding,spatial-intelligence"
+                      style="list-style:none; margin:0; padding:0;">
+                    <td width="26%">
+                      <img alt="SuPerPM"
+                           class="papericon-soft"
+                           height="auto"
+                           src="image/pubs_preview/SuPerPM_IROS_2025.png"
+                           width="260">
+                      </img>
+                    </td>
+                    <td width="4%"></td>
+                    <td width="68%">
+                      <p class="papertext">
+                        <strong>SuPerPM: A Surgical Perception Framework Based on Deep Point Matching Learned from
+                          Physical Constrained Simulation Data
+                        </strong>
+                        <br />
+                        <a href="https://scholar.google.com/citations?user=HWIoDGYAAAAJ">Shan Lin</a>;
+                        <a href="https://scholar.google.com/citations?user=RjigmN0AAAAJ&hl=en">Albert J. Miao</a>;
+                        <a href="https://www.linkedin.com/in/farong-wang-b8b367293/">Ali Alabiad</a>;
+
+
+                        <a class="highlighted-fei-name"
+                           href="https://lnnx2006.github.io">Fei Liu</a>;
+
+                        <a href="https://scholar.google.com/citations?hl=en&user=-9nW01gAAAAJ">Kaiyuan Wang</a>;
+
+                        <a href="https://jingpeilu.github.io/">Jingpei Lu</a>;
+
+                        <a href="https://scholar.google.com/citations?user=HP3e2owAAAAJ&hl=en">Florian Richter</a>;
+                        <a href="https://yip.eng.ucsd.edu/">Michael Yip</a>
+
+
+                        <br />
+                        <strong>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</strong>,
+                        2024
+                        <br />
+                        <a href="https://ieeexplore.ieee.org/abstract/document/10802079"
+                           class="btn custom-btn-blue custom-btn-small"
+                           role="button">
+                          <i class="fa fa-fw fa-file-pdf"></i> PDF</a>
+                      </p>
+                    </td>
+                  </tr>
+
+
+                  <!-- ******************* -->
+                  <!-- a publication -->
+                  <!-- ******************* -->
+                  <tr class="paperrow"
+                      data-selected="true"
+                      data-topics="surgical-robotics,physical-simulation,visual-understanding,spatial-intelligence,embodied-ai,patent"
+                      style="list-style:none; margin:0; padding:0;">
+                    <td width="26%">
+                      <img alt="Real-to-Sim Patent"
+                           class="papericon-soft"
+                           height="auto"
+                           src="image/pubs_preview/Real2Sim_Patent_2024.png"
+                           width="260">
+                      </img>
+                    </td>
+                    <td width="4%"></td>
+                    <td width="68%">
+                      <p class="papertext">
+                        <strong>Real-to-simulation Matching of Deformable Soft Tissue and Other Objects with
+                          Position-based Dynamics for Robot Control
+                        </strong>
+                        <br />
+                        <a class="highlighted-fei-name"
+                           href="https://lnnx2006.github.io">Fei Liu</a>;
+                        <a href="https://scholar.google.com/citations?user=HP3e2owAAAAJ&hl=en">Florian Richter</a>;
+                        <a href="https://yip.eng.ucsd.edu/">Michael Yip</a>
+                        <br />
+                        <strong>US Patent US20240157559A1</strong>,
+                        2024
+                        <br />
+                        <a href="https://patents.google.com/patent/US20240157559A1/en"
+                           class="btn custom-btn-blue custom-btn-small"
+                           role="button">
+                          <i class="fa fa-fw fa-file-pdf"></i> Patent</a>
+                      </p>
+                    </td>
+                  </tr>
+
+
+                  <!-- ******************* -->
+                  <!-- a publication -->
+                  <!-- ******************* -->
+                  <tr class="paperrow"
+                      data-selected="true"
+                      data-topics="surgical-robotics,visual-understanding,spatial-intelligence,embodied-ai"
+                      style="list-style:none; margin:0; padding:0;">
+                    <td width="26%">
+                      <img alt="Robust Tool Tracking"
+                           class="papericon-soft"
+                           height="auto"
+                           src="image/pubs_preview/ToolTracking_2024_ICRA.png"
+                           width="260">
+                      </img>
+                    </td>
+                    <td width="4%"></td>
+                    <td width="68%">
+                      <p class="papertext">
+                        <strong>Robust Surgical Tool Tracking with Pixel-based Probabilities for Projected Geometric
+                          Primitives
+                        </strong>
+                        <br />
+                        <a href="">Christopher D'Ambrosia</a>;
+                        <a href="https://scholar.google.com/citations?user=HP3e2owAAAAJ&hl=en">Florian Richter</a>;
+                        <a href="https://sarahchiu.github.io/">Zih-Yun Chiu</a>;
+                        <a href="https://scholar.google.com/citations?user=WMkkgJ0AAAAJ&hl=en">Nikhil Uday Shinde</a>;
+                        <a class="highlighted-fei-name"
+                           href="https://lnnx2006.github.io">Fei Liu</a>;
+                        <a href="https://hichristensen.com/">Henrik Christensen</a>;
+                        <a href="https://yip.eng.ucsd.edu/">Michael Yip</a>
+                        <br />
+                        <strong>IEEE International Conference on Robotics and Automation (ICRA)</strong>,
+                        2024
+                        <br />
+                        <a href="https://ieeexplore.ieee.org/abstract/document/10610378/"
+                           class="btn custom-btn-blue custom-btn-small"
+                           role="button">
+                          <i class="fa fa-fw fa-file-pdf"></i> Paper</a>
+                      </p>
+                    </td>
+                  </tr>
+
+
+                  <!-- ******************* -->
+                  <!-- a publication -->
+                  <!-- ******************* -->
+                  <tr class="paperrow"
+                      data-selected="true"
+                      data-topics="control-planning,spatial-intelligence,embodied-ai"
+                      style="list-style:none; margin:0; padding:0;">
+                    <td width="26%">
+                      <img alt="Autonomous Cloth Manipulation"
+                           class="papericon-soft"
+                           height="auto"
+                           src="image/pubs_preview/ClothControl_ICRA_2024.png"
+                           width="260">
+                      </img>
+                    </td>
+                    <td width="4%"></td>
+                    <td width="68%">
+                      <p class="papertext">
+                        <strong>Achieving Autonomous Cloth Manipulation with Optimal Control via Differentiable
+                          Physics-Aware Regularization and Safety Constraints
+                        </strong>
+                        <br />
+                        <a href="https://scholar.google.com/citations?user=EEob-vIAAAAJ&hl=en">Yutong Zhang *</a>;
+                        <a class="highlighted-fei-name"
+                           href="https://lnnx2006.github.io">Fei Liu *</a>;
+                        <a href="https://lancial.github.io/">Xiao Liang</a>;
+                        <a href="https://yip.eng.ucsd.edu/">Michael Yip</a>
+                        <br />
+                        (*: equal contribution.)
+                        <br />
+                        <strong>IEEE International Conference on Robotics and Automation (ICRA)</strong>,
+                        2024
+                        <br />
+                        <a href="https://ieeexplore.ieee.org/abstract/document/10611111"
+                           class="btn custom-btn-blue custom-btn-small"
+                           role="button">
+                          <i class="fa fa-fw fa-file-pdf"></i> Paper</a>
+                      </p>
+                    </td>
+                  </tr>
+
+
+                  <!-- ******************* -->
+                  <!-- a publication -->
+                  <!-- ******************* -->
+                  <tr class="paperrow"
+                      data-selected="true"
+                      data-topics="surgical-robotics,control-planning,spatial-intelligence,embodied-ai,physical-simulation"
+                      style="list-style:none; margin:0; padding:0;">
+                    <td width="26%">
+                      <img alt="Real-to-Sim"
+                           class="papericon-soft"
+                           height="auto"
+                           src="image/pubs_preview/Real2Sim_2024_ICRA.png"
+                           width="260">
+                      </img>
+                    </td>
+                    <td width="4%"></td>
+                    <td width="68%">
+                      <p class="papertext">
+                        <strong>Real-to-Sim Deformable Object Manipulation: Optimizing Physics Models with Residual
+                          Mappings for Robotic Surgery
+                        </strong>
+                        <br />
+                        <a href="https://lancial.github.io/">Xiao Liang *</a>;
+                        <a class="highlighted-fei-name"
+                           href="https://lnnx2006.github.io">Fei Liu *</a>;
+
+                        <a href="https://scholar.google.com/citations?user=EEob-vIAAAAJ&hl=en">Yutong Zhang</a>;
+                        <a href="https://scholar.google.com/citations?user=hZJ4IAMAAAAJ&hl=en">Yuelei Li</a>;
+                        <a href="https://scholar.google.com/citations?user=HWIoDGYAAAAJ">Shan Lin</a>;
+
+                        <a href="https://yip.eng.ucsd.edu/">Michael Yip</a>
+                        <br />
+                        <strong>IEEE International Conference on Robotics and Automation (ICRA)</strong>,
+                        2024
+                        <br />
+                        (*: equal contribution.)
+                        <br />
+                        <a href="https://ieeexplore.ieee.org/abstract/document/10610263"
+                           class="btn custom-btn-blue custom-btn-small"
+                           role="button">
+                          <i class="fa fa-fw fa-file-pdf"></i> Paper</a>
+                      </p>
+                    </td>
+                  </tr>
+
+
+
+                  <!-- ******************* -->
+                  <!-- a publication -->
+                  <!-- ******************* -->
+                  <tr class="paperrow"
+                      data-selected="true"
+                      data-topics="surgical-robotics,control-planning,spatial-intelligence,embodied-ai,physical-simulation"
+                      style="list-style:none; margin:0; padding:0;">
+                    <td width="26%">
+                      <img alt="JIGGLE"
+                           class="papericon-soft"
+                           height="auto"
+                           src="image/pubs_preview/ActiveJiggle_2024_RSS.png"
+                           width="260">
+                      </img>
+                    </td>
+                    <td width="4%"></td>
+                    <td width="68%">
+                      <p class="papertext">
+                        <strong>JIGGLE: An Active Sensing Framework for Boundary Parameters Estimation in Deformable
+                          Surgical Environments
+                        </strong>
+                        <br />
+
+                        <a href="https://scholar.google.com/citations?user=WMkkgJ0AAAAJ&hl=en">Nikhil Uday Shinde</a>;
+                        <a href="https://lancial.github.io/">Xiao Liang</a>;
+                        <a class="highlighted-fei-name"
+                           href="https://lnnx2006.github.io">Fei Liu</a>;
+                        <a href="https://scholar.google.com/citations?user=EEob-vIAAAAJ&hl=en">Yutong Zhang</a>;
+                        <a href="https://scholar.google.com/citations?user=HP3e2owAAAAJ&hl=en">Florian Richter</a>;
+                        <a href="https://sylviaherbert.com/">Sylvia Herbert</a>;
+                        <a href="https://yip.eng.ucsd.edu/">Michael Yip</a>
+                        <br />
+                        <strong>Robotics: Science and System (RSS)</strong>, 2024<br />
+                        <strong style="color:#FF8200;">(Best Paper Award at 5th Workshop: Reflections on Representations
+                          and Manipulating Deformable Objects @ ICRA2025)</strong> <br />
+                        <a href="https://www.roboticsproceedings.org/rss20/p007.pdf"
+                           class="btn custom-btn-blue custom-btn-small"
+                           role="button">
+                          <i class="fa fa-fw fa-file-pdf"></i> Paper</a>
+                      </p>
+                    </td>
+                  </tr>
+
+
+                  <!-- ******************* -->
+                  <!-- a publication -->
+                  <!-- ******************* -->
+                  <tr class="paperrow"
+                      data-selected="true"
+                      data-topics="visual-understanding,spatial-intelligence"
+                      style="list-style:none; margin:0; padding:0;">
+                    <td width="26%">
+                      <img alt="ORRN"
+                           class="papericon-soft"
+                           height="auto"
+                           src="image/pubs_preview/ORRN_2022_TBME_2.png"
+                           width="260">
+                      </img>
+                    </td>
+                    <td width="4%"></td>
+                    <td width="68%">
+                      <p class="papertext">
+                        <strong>ORRN: An ODE-Based Recursive Registration Network for Deformable Respiratory Motion
+                          Estimation With Lung 4DCT Images
+                        </strong>
+                        <br />
+
+                        <a href="https://lancial.github.io/">Xiao Liang</a>;
+                        <a href="https://scholar.google.com/citations?user=HWIoDGYAAAAJ">Shan Lin</a>;
+                        <a class="highlighted-fei-name"
+                           href="https://lnnx2006.github.io">Fei Liu</a>;
+                        <a href="https://dimitrischreiber.weebly.com/">Dimitri Schreiber</a>;
+                        <a href="https://yip.eng.ucsd.edu/">Michael Yip</a>
+                        <br />
+                        <strong>IEEE Transactions on Biomedical Engineering (T-BME)</strong>, 2023<br />
+                        <a href="https://ieeexplore.ieee.org/abstract/document/10144816"
+                           class="btn custom-btn-blue custom-btn-small"
+                           role="button">
+                          <i class="fa fa-fw fa-file-pdf"></i> Paper</a>
+                      </p>
+                    </td>
+                  </tr>
+
+
+
+                  <!-- ******************* -->
+                  <!-- a publication -->
+                  <!-- ******************* -->
+                  <tr class="paperrow"
+                      data-selected="true"
+                      data-topics="visual-understanding,spatial-intelligence"
+                      style="list-style:none; margin:0; padding:0;">
+                    <td width="26%">
+                      <img alt="ORRN"
+                           class="papericon-soft"
+                           height="auto"
+                           src="image/pubs_preview/DiffRopeControl_2023_RAL.png"
+                           width="260">
+                      </img>
+                    </td>
+                    <td width="4%"></td>
+                    <td width="68%">
+                      <p class="papertext">
+                        <strong>Robotic Manipulation of Deformable Rope-Like Objects Using Differentiable Compliant
+                          Position-Based Dynamics
+                        </strong>
+                        <br />
+
+                        <a class="highlighted-fei-name"
+                           href="https://lnnx2006.github.io">Fei Liu *</a>;
+
+                        <a href="https://entongsu.github.io/">Entong Su *</a>;
+
+                        <a href="https://jingpeilu.github.io/">Jingpei Lu</a>;
+                        <a href="https://scholar.google.com/citations?user=h7_rVoEAAAAJ&hl=en">Mingen Li</a>;
+
+                        <a href="https://yip.eng.ucsd.edu/">Michael Yip</a>
+                        <br />
+                        (*: equal contribution.)
+                        <br />
+                        <strong>IEEE Robotics and Automation Letters (R-AL)</strong>, 2023<br />
+                        <a href="https://ieeexplore.ieee.org/abstract/document/10093017"
+                           class="btn custom-btn-blue custom-btn-small"
+                           role="button">
+                          <i class="fa fa-fw fa-file-pdf"></i> Paper</a>
+                      </p>
+                    </td>
+                  </tr>
+
+
+
+
+
+
+                  <!-- ******************* -->
+                  <!-- a publication -->
+                  <!-- ******************* -->
+                  <tr class="paperrow"
+                      data-selected="true"
+                      data-topics="visual-understanding,control-planning,spatial-intelligence,embodied-ai,physical-simulation"
+                      style="list-style:none; margin:0; padding:0;">
+                    <td width="26%">
+                      <img alt="Image-based Pose Estimation"
+                           class="papericon-soft"
+                           height="auto"
+                           src="image/pubs_preview/ImagePoseEstimation_ICRA_2023.png"
+                           width="260">
+                      </img>
+                    </td>
+                    <td width="4%"></td>
+                    <td width="68%">
+                      <p class="papertext">
+                        <strong>Image-based Pose Estimation and Shape Reconstruction for Robot Manipulators and Soft,
+                          Continuum Robots via Differentiable Rendering
+                        </strong>
+                        <br />
+                        <a href="https://jingpeilu.github.io/">Jingpei Lu *</a>;
+                        <a class="highlighted-fei-name"
+                           href="https://lnnx2006.github.io">Fei Liu *</a>;
+
+                        <a href="https://cgirerd.github.io/">Cédric Girerd</a>;
+
+                        <a href="https://yip.eng.ucsd.edu/">Michael Yip</a>
+                        <br />
+                        <strong>IEEE International Conference on Robotics and Automation (ICRA)</strong>,
+                        2023
+                        <br />
+                        (*: equal contribution.)
+                        <br />
+                        <a href="https://ieeexplore.ieee.org/abstract/document/10161066"
+                           class="btn custom-btn-blue custom-btn-small"
+                           role="button">
+                          <i class="fa fa-fw fa-file-pdf"></i> Paper</a>
+                      </p>
+                    </td>
+                  </tr>
+
+
+                  <!-- ******************* -->
+                  <!-- a publication -->
+                  <!-- ******************* -->
+                  <tr class="paperrow"
+                      data-selected="true"
+                      data-topics="surgical-robotics,visual-understanding,control-planning,spatial-intelligence"
+                      style="list-style:none; margin:0; padding:0;">
+                    <td width="26%">
+                      <img alt="Suture Thread Spline Reconstruction"
+                           class="papericon-soft"
+                           height="auto"
+                           src="image/pubs_preview/SutureThreadReconstruction_2023_ICRA.png"
+                           width="260">
+                      </img>
+                    </td>
+                    <td width="4%"></td>
+                    <td width="68%">
+                      <p class="papertext">
+                        <strong>Suture Thread Spline Reconstruction from Endoscopic Images for Robotic Surgery with
+                          Reliability-driven Keypoint Detection
+                        </strong>
+                        <br />
+                        <a href="https://www.linkedin.com/in/neelay-joglekar-1848561b3/">Neelay Joglekar</a>;
+                        <a class="highlighted-fei-name"
+                           href="https://lnnx2006.github.io">Fei Liu</a>;
+
+                        <a href="https://scholar.google.com/citations?user=u6HtSG0AAAAJ&hl=en">Ryan Orosco</a>;
+
+                        <a href="https://yip.eng.ucsd.edu/">Michael Yip</a>
+                        <br />
+                        <strong>IEEE International Conference on Robotics and Automation (ICRA)</strong>,
+                        2023
+                        <br />
+                        <a href="https://ieeexplore.ieee.org/document/10161539"
+                           class="btn custom-btn-blue custom-btn-small"
+                           role="button">
+                          <i class="fa fa-fw fa-file-pdf"></i> Paper</a>
+                      </p>
+                    </td>
+                  </tr>
+
+                  <!-- ******************* -->
+                  <!-- a publication -->
+                  <!-- ******************* -->
+                  <tr class="paperrow"
+                      data-selected="true"
+                      data-topics="surgical-robotics,visual-understanding,spatial-intelligence,physical-simulation"
+                      style="list-style:none; margin:0; padding:0;">
+                    <td width="26%">
+                      <img alt="Real-to-Sim Registration"
+                           class="papericon-soft"
+                           height="auto"
+                           src="image/pubs_preview/Real2SimRegistration_2021_ICRA.png"
+                           width="260">
+                      </img>
+                    </td>
+                    <td width="4%"></td>
+                    <td width="68%">
+                      <p class="papertext">
+                        <strong>Real-to-Sim Registration of Deformable Soft Tissue with Position-Based Dynamics for
+                          Surgical Robot Autonomy
+                        </strong>
+                        <br />
+                        <a class="highlighted-fei-name"
+                           href="https://lnnx2006.github.io">Fei Liu *</a>;
+                        <a href="https://www.linkedin.com/in/zayn-zihan-li/">Zihan Li *</a>;
+                        <a href="https://y8han.github.io/">Yunhai Han</a>;
+                        <a href="https://jingpeilu.github.io/">Jingpei Lu</a>;
+                        <a href="https://scholar.google.com/citations?user=HP3e2owAAAAJ&hl=en">Florian Richter</a>;
+                        <a href="https://yip.eng.ucsd.edu/">Michael Yip</a>
+                        <br />
+                        <strong>IEEE International Conference on Robotics and Automation (ICRA)</strong>,
+                        2021
+                        <br />
+                        (*: equal contribution.)
+                        <br />
+                        <a href="https://ieeexplore.ieee.org/abstract/document/9561177"
+                           class="btn custom-btn-blue custom-btn-small"
+                           role="button">
+                          <i class="fa fa-fw fa-file-pdf"></i> Paper</a>
+                      </p>
+                    </td>
+                  </tr>
+
+
+
+                  <!-- ******************* -->
+                  <!-- a publication -->
+                  <!-- ******************* -->
+                  <tr class="paperrow"
+                      data-selected="true"
+                      data-topics="surgical-robotics,visual-understanding,spatial-intelligence,physical-simulation,control-planning"
+                      style="list-style:none; margin:0; padding:0;">
+                    <td width="26%">
+                      <img alt="Real-to-Sim Registration"
+                           class="papericon-soft"
+                           height="auto"
+                           src="image/pubs_preview/MPC_BloodSuction_ICRA_2021.png"
+                           width="260">
+                      </img>
+                    </td>
+                    <td width="4%"></td>
+                    <td width="68%">
+                      <p class="papertext">
+                        <strong>Model-Predictive Control of Blood Suction for Surgical Hemostasis using Differentiable
+                          Fluid Simulations
+                        </strong>
+                        <br />
+                        <a href="https://www.linkedin.com/in/jingbinhuang/">Jingbin Huang *</a>;
+                        <a class="highlighted-fei-name"
+                           href="https://lnnx2006.github.io">Fei Liu *</a>;
+                        <a href="https://scholar.google.com/citations?user=HP3e2owAAAAJ&hl=en">Florian Richter</a>;
+                        <a href="https://yip.eng.ucsd.edu/">Michael Yip</a>
+                        <br />
+                        <strong>IEEE International Conference on Robotics and Automation (ICRA)</strong>,
+                        2021
+                        <br />
+                        (*: equal contribution.)
+                        <br />
+                        <a href="https://ieeexplore.ieee.org/abstract/document/9561624"
+                           class="btn custom-btn-blue custom-btn-small"
+                           role="button">
+                          <i class="fa fa-fw fa-file-pdf"></i> Paper</a>
+                      </p>
+                    </td>
+                  </tr>
+
+
+                  <!-- ******************* -->
+                  <!-- a publication -->
+                  <!-- ******************* -->
+                  <tr class="paperrow"
+                      data-selected="true"
+                      data-topics="surgical-robotics,visual-understanding,spatial-intelligence,physical-simulation,control-planning"
+                      style="list-style:none; margin:0; padding:0;">
+                    <td width="26%">
+                      <img alt="AutoBloodSuction"
+                           class="papericon-soft"
+                           height="auto"
+                           src="image/pubs_preview/AutoBloodSuction_2021_RAL.png"
+                           width="260">
+                      </img>
+                    </td>
+                    <td width="4%"></td>
+                    <td width="68%">
+                      <p class="papertext">
+                        <strong>Autonomous Robotic Suction to Clear the Surgical Field for Hemostasis Using Image-Based
+                          Blood Flow Detection
+                        </strong>
+                        <br />
+                        <a href="https://scholar.google.com/citations?user=HP3e2owAAAAJ&hl=en">Florian Richter</a>;
+                        <a href="https://scholar.google.com/citations?user=HP3e2owAAAAJ&hl=en">Shihao Shen</a>;
+                        <a class="highlighted-fei-name"
+                           href="https://lnnx2006.github.io">Fei Liu</a>;
+                        <a href="https://www.linkedin.com/in/jingbinhuang/">Jingbin Huang</a>;
+
+                        <a href="https://pure.psu.edu/en/persons/emily-funk/">Emily K. Funk</a>;
+
+                        <a href="https://scholar.google.com/citations?user=u6HtSG0AAAAJ&hl=en">Ryan Orosco</a>;
+
+                        <a href="https://yip.eng.ucsd.edu/">Michael Yip</a>
+                        <br />
+                        <strong>IEEE Robotics and Automation Letters (R-AL)</strong>, 2021
+                        <br />
+                        <strong style="color:#FF8200;">(Best Paper Award Finalist at ICRA'22)</strong>
+                        <br />
+                        <a href="https://ieeexplore.ieee.org/abstract/document/9343724"
+                           class="btn custom-btn-blue custom-btn-small"
+                           role="button">
+                          <i class="fa fa-fw fa-file-pdf"></i> Paper</a>
+                      </p>
+                    </td>
+                  </tr>
+
+
+                  <!-- ******************* -->
+                  <!-- a publication -->
+                  <!-- ******************* -->
+                  <tr class="paperrow"
+                      data-selected="true"
+                      data-topics="haptic-teleoperation,control-planning"
+                      style="list-style:none; margin:0; padding:0;">
+                    <td width="26%">
+                      <img alt="Review of Advanced Medical Telerobots                      "
+                           class="papericon-soft"
+                           height="auto"
+                           src="image/pubs_preview/Telerobots_Review_2020.png"
+                           width="260">
+                      </img>
+                    </td>
+                    <td width="4%"></td>
+                    <td width="68%">
+                      <p class="papertext">
+                        <strong>Review of Advanced Medical Telerobots
+                        </strong>
+                        <br />
+                        <a href="https://scholar.google.com/citations?user=6r4_QewAAAAJ&hl=en">Sarmad Mehrdad *</a>
+                        <a class="highlighted-fei-name"
+                           href="https://lnnx2006.github.io">Fei Liu *</a>;
+
+                        <a href="https://scholar.google.com/citations?user=3hNhP-0AAAAJ&hl=fr">Minh Tu Pham</a>;
+                        <a href="https://scholar.google.com/citations?user=ViL8uI8AAAAJ&hl=en">Arnaud Lelevé</a>;
+                        <a href="https://scholar.google.com/citations?user=H6_aG50AAAAJ&hl=en">S. Farokh Atashzar</a>
+                        <br />
+                        <strong>Applied Science</strong>, 2021
+                        <br />
+                        (*: equal contribution.)
+                        <br />
+                        <a href="https://www.mdpi.com/2076-3417/11/1/209"
+                           class="btn custom-btn-blue custom-btn-small"
+                           role="button">
+                          <i class="fa fa-fw fa-file-pdf"></i> Paper</a>
+                      </p>
+                    </td>
+                  </tr>
+
+
+
+                  <!-- ******************* -->
+                  <!-- a publication -->
+                  <!-- ******************* -->
+                  <tr class="paperrow"
+                      data-selected="true"
+                      data-topics="control-planning,embodied-ai,spatial-intelligence"
+                      style="list-style:none; margin:0; padding:0;">
+                    <td width="26%">
+                      <img alt="2D Surgical Simulation"
+                           class="papericon-soft"
+                           height="auto"
+                           src="image/pubs_preview/MotionPlanning_2020_IROS.png"
+                           width="260">
+                      </img>
+                    </td>
+                    <td width="4%"></td>
+                    <td width="68%">
+                      <p class="papertext">
+                        <strong>
+                          Dynamically Constrained Motion Planning Networks for Non-Holonomic Robots
+                        </strong>
+                        <br />
+                        <a href="https://jacobjj.github.io/">Jacob J. Johnson</a>;
+                        <a href="https://jacobjj.github.io/">Linjun Li</a>;
+                        <a class="highlighted-fei-name"
+                           href="https://lnnx2006.github.io">Fei Liu</a>;
+
+                        <a href="https://qureshiahmed.github.io/">Ahmed H. Qureshi</a>;
+                        <a href="https://yip.eng.ucsd.edu/">Michael Yip</a>
+                        <br />
+                        <strong>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</strong>,
+                        2020
+                        <br />
+                        <a href="https://ieeexplore.ieee.org/abstract/document/9341283"
+                           class="btn custom-btn-blue custom-btn-small"
+                           role="button">
+                          <i class="fa fa-fw fa-file-pdf"></i> Paper</a>
+                      </p>
+                    </td>
+                  </tr>
+
+
+                  <!-- ******************* -->
+                  <!-- a publication -->
+                  <!-- ******************* -->
+                  <tr class="paperrow"
+                      data-selected="true"
+                      data-topics="surgical-robotics,physical-simulation"
+                      style="list-style:none; margin:0; padding:0;">
+                    <td width="26%">
+                      <img alt="2D Surgical Simulation"
+                           class="papericon-soft"
+                           height="auto"
+                           src="image/pubs_preview/SurgicalSim2D_2020_IROS_Workshop.png"
+                           width="260">
+                      </img>
+                    </td>
+                    <td width="4%"></td>
+                    <td width="68%">
+                      <p class="papertext">
+                        <strong>A 2D Surgical Simulation Framework for Tool-Tissue Interaction
+
+                        </strong>
+                        <br />
+                        <a href="https://y8han.github.io/">Yunhai Han</a>;
+                        <a class="highlighted-fei-name"
+                           href="https://lnnx2006.github.io">Fei Liu</a>;
+                        <a href="https://yip.eng.ucsd.edu/">Michael Yip</a>
+                        <br />
+                        <strong>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)
+                          Workshop</strong>, 2020
+                        <br />
+                        <a href="https://arxiv.org/abs/2010.13936"
+                           class="btn custom-btn-blue custom-btn-small"
+                           role="button">
+                          <i class="fa fa-fw fa-file-pdf"></i> Paper</a>
+                      </p>
+                    </td>
+                  </tr>
+
+
+                  <!-- ******************* -->
+                  <!-- a publication -->
+                  <!-- ******************* -->
+                  <tr class="paperrow"
+                      data-selected="true"
+                      data-topics="haptic-teleoperation,control-planning"
+                      style="list-style:none; margin:0; padding:0;">
+                    <td width="26%">
+                      <img alt="Energy-based Haptic Training"
+                           class="papericon-soft"
+                           height="auto"
+                           src="image/pubs_preview/DualUserHaptic_2020_Robotica.png"
+                           width="260">
+                      </img>
+                    </td>
+                    <td width="4%"></td>
+                    <td width="68%">
+                      <p class="papertext">
+                        <strong>
+                          An Energy-Based Approach for n-DOF Passive Dual-User Haptic Training Systems
+                        </strong>
+                        <br />
+
+                        <a class="highlighted-fei-name"
+                           href="https://lnnx2006.github.io">Fei Liu</a>;
+                        <a href="https://www.linkedin.com/in/angellicona/?originalSubdomain=mx">Angel Ricardo
+                          Licona</a>;
+                        <a href="https://scholar.google.com/citations?user=ViL8uI8AAAAJ&hl=en">Arnaud Lelevé</a>;
+                        <a href="http://www.ampere-lab.fr/spip.php?article523&lang=en">Damien Eberard</a>;
+                        <a href="https://scholar.google.com/citations?user=3hNhP-0AAAAJ&hl=fr">Minh Tu Pham</a>;
+                        <a href="https://scholar.google.com/citations?user=SpK4DUUAAAAJ&hl=fr">Tanneguy Redarce</a>
+                        <br />
+                        <strong>Robotica</strong>, 2019
+                        <br />
+                        <a href="https://www.cambridge.org/core/journals/robotica/article/an-energybased-approach-for-ndof-passive-dualuser-haptic-training-systems/80D42C872561E397B90F160ACD65A2F3"
+                           class="btn custom-btn-blue custom-btn-small"
+                           role="button">
+                          <i class="fa fa-fw fa-file-pdf"></i> Paper
+                        </a>
+                      </p>
+                    </td>
+                  </tr>
+
+
+                  <!-- ******************* -->
+                  <!-- a publication -->
+                  <!-- ******************* -->
+                  <tr class="paperrow"
+                      data-selected="false"
+                      data-topics="haptic-teleoperation,control-planning"
+                      style="list-style:none; margin:0; padding:0;">
+                    <td width="26%">
+                      <img alt="HapticsinMedicine_2019_Springer"
+                           class="papericon-soft"
+                           height="auto"
+                           src="image/pubs_preview/HapticsinMedicine_2019_Springer.png"
+                           width="260">
+                      </img>
+                    </td>
+                    <td width="4%"></td>
+                    <td width="68%">
+                      <p class="papertext">
+                        <strong>
+                          Applications of Haptics in Medicine
+                        </strong>
+                        <br />
+                        <a href="https://www.linkedin.com/in/angellicona/?originalSubdomain=mx">Angel Ricardo
+                          Licona</a>;
+                        <a href="https://lnnx2006.github.io"
+                           class="highlighted-fei-name">Fei Liu</a>;
+
+                        <a href="">David Pinzon</a>;
+                        <a href="">Ali Torabi</a>;
+                        <a href="">Pierre Boulanger</a>;
+
+
+                        <a href="https://scholar.google.com/citations?user=ViL8uI8AAAAJ&hl=en">Arnaud Lelevé</a>;
+                        <a href="https://scholar.google.com/citations?user=XcUvFBIAAAAJ&hl=fr">Richard Moreau</a>;
+                        <a href="https://scholar.google.com/citations?user=3hNhP-0AAAAJ&hl=fr">Minh Tu Pham</a>;
+                        <a href="https://www.ece.ualberta.ca/~mtavakol/pmwiki/">Mahdi Tavakoli</a>
+                        <br />
+
+                        <strong>Haptic Interfaces for Accessibility, Health, and Enhanced Quality of Life</strong>, 2019
+                        <br />
+
+                        <a href="https://link.springer.com/chapter/10.1007/978-3-030-34230-2_7"
+                           class="btn custom-btn-blue custom-btn-small"
+                           role="button">
+                          <i class="fa fa-fw fa-file-pdf"></i> Paper
+                        </a>
+                      </p>
+                    </td>
+                  </tr>
+
+
+
+                  <!-- ******************* -->
+                  <!-- a publication -->
+                  <!-- ******************* -->
+                  <tr class="paperrow"
+                      data-selected="false"
+                      data-topics="haptic-teleoperation,control-planning"
+                      style="list-style:none; margin:0; padding:0;">
+                    <td width="26%">
+                      <img alt="CollaborativeHaptic_2019_ICMCE"
+                           class="papericon-soft"
+                           height="auto"
+                           src="image/pubs_preview/CollaborativeHaptic_2019_ICMCE.png"
+                           width="260">
+                      </img>
+                    </td>
+                    <td width="4%"></td>
+                    <td width="68%">
+                      <p class="papertext">
+                        <strong>
+                          Collaborative Hands-on Training on Haptic Simulators
+                        </strong>
+                        <br />
+                        <a href="https://www.linkedin.com/in/angellicona/?originalSubdomain=mx">Angel Ricardo
+                          Licona</a>;
+                        <a href="https://lnnx2006.github.io"
+                           class="highlighted-fei-name">Fei Liu</a>;
+                        <a href="https://scholar.google.com/citations?user=ViL8uI8AAAAJ&hl=en">Arnaud Lelevé</a>;
+                        <a href="https://scholar.google.com/citations?user=3hNhP-0AAAAJ&hl=fr">Minh Tu Pham</a>;
+                        <br />
+
+                        <strong>ICVARS '19: Proceedings of the 3rd International Conference on Virtual and
+                          Augmented Reality Simulations</strong>, 2019
+                        <br />
+
+                        <a href="https://link.springer.com/chapter/10.1007/978-3-030-34230-2_7"
+                           class="btn custom-btn-blue custom-btn-small"
+                           role="button">
+                          <i class="fa fa-fw fa-file-pdf"></i> Paper
+                        </a>
+                      </p>
+                    </td>
+                  </tr>
+
+
+                  <!-- ******************* -->
+                  <!-- a publication -->
+                  <!-- ******************* -->
+                  <tr class="paperrow"
+                      data-selected="false"
+                      data-topics="haptic-teleoperation,control-planning"
+                      style="list-style:none; margin:0; padding:0;">
+                    <td width="26%">
+                      <img alt="EnergyBasedHaptic_IROS_2016"
+                           class="papericon-soft"
+                           height="auto"
+                           src="image/pubs_preview/EnergyBasedHaptic_IROS_2016.png"
+                           width="260">
+                      </img>
+                    </td>
+                    <td width="4%"></td>
+                    <td width="68%">
+                      <p class="papertext">
+                        <strong>
+                          An Energy Based Approach for Passive Dual-user Haptic Training Systems
+                        </strong>
+                        <br />
+                        <a href="https://lnnx2006.github.io"
+                           class="highlighted-fei-name">Fei Liu</a>;
+                        <a href="https://scholar.google.com/citations?user=ViL8uI8AAAAJ&hl=en">Arnaud Lelevé</a>;
+                        <a href="http://www.ampere-lab.fr/spip.php?article523&lang=en">Damien Eberard</a>;
+                        <a href="https://scholar.google.com/citations?user=SpK4DUUAAAAJ&hl=fr">Tanneguy Redarce</a>
+                        <br />
+
+                        <strong>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</strong>,
+                        2016
+                        <br />
+
+                        <a href="https://ieeexplore.ieee.org/document/7759771"
+                           class="btn custom-btn-blue custom-btn-small"
+                           role="button">
+                          <i class="fa fa-fw fa-file-pdf"></i> Paper
+                        </a>
+                      </p>
+                    </td>
+                  </tr>
+
+
+                  <!-- ******************* -->
+                  <!-- a publication -->
+                  <!-- ******************* -->
+                  <tr class="paperrow"
+                      data-selected="false"
+                      data-topics="haptic-teleoperation,control-planning"
+                      style="list-style:none; margin:0; padding:0;">
+                    <td width="26%">
+                      <img alt="DualUser_AAA_2015_MESROB"
+                           class="papericon-soft"
+                           height="auto"
+                           src="image/pubs_preview/DualUser_AAA_2015_MESROB.png"
+                           width="260">
+                      </img>
+                    </td>
+                    <td width="4%"></td>
+                    <td width="68%">
+                      <p class="papertext">
+                        <strong>
+                          A Dual-User Teleoperation System with Adaptive Authority Adjustment for Haptic Training
+                        </strong>
+                        <br />
+                        <a href="https://lnnx2006.github.io"
+                           class="highlighted-fei-name">Fei Liu</a>;
+                        <a href="https://scholar.google.com/citations?user=ViL8uI8AAAAJ&hl=en">Arnaud Lelevé</a>;
+                        <a href="http://www.ampere-lab.fr/spip.php?article523&lang=en">Damien Eberard</a>;
+                        <a href="https://scholar.google.com/citations?user=SpK4DUUAAAAJ&hl=fr">Tanneguy Redarce</a>
+                        <br />
+
+                        <strong>New Trends in Medical and Service Robots: Human Centered Analysis, Control and
+                          Design (MESROB)</strong>,
+                        2016
+                        <br />
+
+                        <a href="https://link.springer.com/chapter/10.1007/978-3-319-30674-2_13"
+                           class="btn custom-btn-blue custom-btn-small"
+                           role="button">
+                          <i class="fa fa-fw fa-file-pdf"></i> Paper
+                        </a>
+                      </p>
+                    </td>
+                  </tr>
+
+
+                  <!-- ******************* -->
+                  <!-- a publication -->
+                  <!-- ******************* -->
+                  <tr class="paperrow"
+                      data-selected="false"
+                      data-topics="haptic-teleoperation,control-planning"
+                      style="list-style:none; margin:0; padding:0;">
+                    <td width="26%">
+                      <img alt="DualUser_OAA_2015_EMBC"
+                           class="papericon-soft"
+                           height="auto"
+                           src="image/pubs_preview/DualUser_OAA_2015_EMBC.png"
+                           width="260">
+                      </img>
+                    </td>
+                    <td width="4%"></td>
+                    <td width="68%">
+                      <p class="papertext">
+                        <strong>
+                          A Dual-user Teleoperation System with Online Authority Adjustment for Haptic Training
+                        </strong>
+                        <br />
+                        <a href="https://lnnx2006.github.io"
+                           class="highlighted-fei-name">Fei Liu</a>;
+                        <a href="https://scholar.google.com/citations?user=ViL8uI8AAAAJ&hl=en">Arnaud Lelevé</a>;
+                        <a href="http://www.ampere-lab.fr/spip.php?article523&lang=en">Damien Eberard</a>;
+                        <a href="https://scholar.google.com/citations?user=SpK4DUUAAAAJ&hl=fr">Tanneguy Redarce</a>
+                        <br />
+
+                        <strong>37th Annual International Conference of the IEEE Engineering in Medicine and Biology
+                          Society (EMBC)</strong>,
+                        2015
+                        <br />
+
+                        <a href="https://ieeexplore.ieee.org/document/7318574"
+                           class="btn custom-btn-blue custom-btn-small"
+                           role="button">
+                          <i class="fa fa-fw fa-file-pdf"></i> Paper
+                        </a>
+                      </p>
+                    </td>
+                  </tr>
+
+
+                  <!-- ******************* -->
+                  <!-- a publication -->
+                  <!-- ******************* -->
+                  <tr class="paperrow"
+                      data-selected="false"
+                      data-topics="haptic-teleoperation,control-planning,surgical-robotics"
+                      style="list-style:none; margin:0; padding:0;">
+                    <td width="26%">
+                      <img alt="Fei_DualUser_Thesis_2016"
+                           class="papericon-soft"
+                           height="auto"
+                           src="image/pubs_preview/Fei_DualUser_Thesis_2016_2.png"
+                           width="260">
+                      </img>
+                    </td>
+                    <td width="4%"></td>
+                    <td width="68%">
+                      <p class="papertext">
+                        <strong>
+                          A Dual-user Teleoperation System with Online Authority Adjustment for Haptic Training
+                        </strong>
+                        <br />
+                        <a href="https://lnnx2006.github.io"
+                           class="highlighted-fei-name">Fei Liu</a>
+                        <br />
+
+                        <strong>PHD Thesis, INSA de Lyon, University of Lyon, France</strong>,
+                        2016
+                        <br />
+
+                        <a href="https://theses.hal.science/tel-01514992"
+                           class="btn custom-btn-blue custom-btn-small"
+                           role="button">
+                          <i class="fa fa-fw fa-file-pdf"></i> Thesis
+                        </a>
+                      </p>
+                    </td>
+                  </tr>
+
+
+
+                </table>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+  <div style="height: 50px;"></div>
+
+
+
+
+</body>
+
+</html>

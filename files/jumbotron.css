@@ -1,0 +1,189 @@
+/* Move down content because we have a fixed navbar that is 3.5rem tall */
+body {
+  padding-top: 3.5rem;
+  padding: 0;
+  /* font-family: 'Jost', Arial, sans-serif !important; */
+  /* font-family: 'TeXGyrePagella', Arial, sans-serif !important; */
+  /* font-family: "OpenSans", Helvetica, Arial, sans-serif !important; */
+}
+
+.text {
+  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-size: 12pt;
+  font-style: normal;
+  font-weight: normal;
+  color: #000000
+}
+
+.textsectionheader {
+  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-size: 14pt;
+  font-style: normal;
+  font-weight: bold;
+  color: #4b5564;
+}
+
+.corinthia-regular {
+  font-family: "Corinthia", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.corinthia-bold {
+  font-family: "Corinthia", cursive;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+a:link {
+  color: #4b5564;
+}
+
+a:visited {
+  color: #4b5564;
+}
+
+a:hover {
+  color: #FF8200;
+}
+
+.custom-navbar {
+  background-color: #35393f;
+  /* Replace with your desired color */
+}
+
+.font-liu-jian-mao-cao-regular {
+  font-family: "Liu Jian Mao Cao", serif;
+  font-weight: 400;
+  font-size: 44px;
+  font-style: normal;
+}
+
+.font-zhi-mang-xing-regular {
+  font-family: "Zhi Mang Xing", cursive;
+  font-weight: 400;
+  font-size: 44px;
+  font-style: normal;
+}
+
+
+.highlighted-fei-name {
+  text-decoration: underline;
+  font-weight: bold;
+  color: #000000;
+  /* Replace with your desired color */
+}
+
+.custom-btn-blue {
+  background-color: #4b5564 !important;
+  /* Blue background */
+  color: white !important;
+  /* White text */
+  border: none !important;
+  /* Remove border */
+}
+
+.custom-btn-blue:hover,
+.custom-btn-red:hover {
+  opacity: 0.6;
+  /* Add hover effect */
+  background-color: #FF8200 !important;
+  /* Change to another color on hover */
+  color: #f0f0f0 !important;
+  /* Optional: Change text color */
+}
+
+.custom-btn-small {
+  padding: 8px 8px !important;
+  /* Adjust padding for smaller size */
+  font-size: 14px !important;
+  /* Reduce font size */
+  line-height: 1 !important;
+  /* Adjust line height */
+  border-radius: 3px !important;
+  /* Optional: Rounded corners */
+}
+
+.custom-btn-circle {
+  /* padding: 8px 8px !important;
+  font-size: 12px !important;
+  line-height: 1 !important;
+  border-radius: 50% !important; */
+  width: 35px;
+  height: 35px;
+  padding: 0;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.filter-link {
+  display: inline-block;
+  padding: 4px 10px;
+  margin-left: 6px;
+  border: 1px solid #000;
+  border-radius: 999px;
+  background: #fff;
+  font-size: 12px;
+  text-decoration: none;
+  color: #0c5bb5;
+}
+
+.filter-link.active {
+  background: #4b5564;
+  color: #fff;
+  border-color: #4b5564;
+  text-decoration: none;
+}
+
+.topic-btn {
+  display: inline-block;
+  padding: 4px 10px;
+  margin: 0 6px 6px 0;
+  border: 1px solid #000;
+  border-radius: 999px;
+  background: #fff;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.topic-btn.active {
+  background: #A31F34;
+  color: #fff;
+  border-color: #A31F34;
+}
+
+
+
+.people-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  /* fills box, crops if needed */
+  border-radius: 4%;
+  /* display: block; */
+}
+
+.people-link {
+  text-decoration: none;
+}
+
+
+.papericon {
+  border-radius: 0;
+  border: 1px solid #000;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+/* Previous rounded/shadow style kept as an option if needed */
+.papericon-soft {
+  border-radius: 8px;
+  -moz-box-shadow: 3px 3px 6px #888;
+  -webkit-box-shadow: 3px 3px 6px #888;
+  box-shadow: 3px 3px 6px #888;
+}
