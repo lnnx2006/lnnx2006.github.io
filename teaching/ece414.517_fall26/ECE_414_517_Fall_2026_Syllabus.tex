@@ -1,0 +1,234 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=0.8in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[table]{xcolor}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+
+\definecolor{utorange}{HTML}{FF8200}
+\definecolor{utdarkorange}{HTML}{C95000}
+\definecolor{linkblue}{HTML}{224B8D}
+\definecolor{noclassbg}{HTML}{FFE9E7}
+\definecolor{tutorialbg}{HTML}{E4F3FB}
+\definecolor{milestonebg}{HTML}{FFF2DF}
+\definecolor{lightgray}{HTML}{F3F3F3}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=utdarkorange,
+  urlcolor=linkblue,
+  citecolor=linkblue,
+  pdftitle={ECE 414/517: Reinforcement Learning --- Fall 2026},
+  pdfauthor={Fei Liu}
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{ECE 414/517: Reinforcement Learning}
+\rhead{Fall 2026}
+\cfoot{\thepage}
+\setlength{\headheight}{14pt}
+
+\setlist[itemize]{leftmargin=1.4em,itemsep=2pt,topsep=4pt}
+\setlist[enumerate]{leftmargin=1.6em,itemsep=2pt,topsep=4pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\renewcommand{\arraystretch}{1.18}
+
+\newcommand{\sectionrule}{\vspace{-0.4em}\color{utorange}\rule{\linewidth}{0.8pt}\color{black}}
+\newcommand{\placeholder}[1]{\textcolor{red}{\textbf{[#1]}}}
+
+\begin{document}
+
+\begin{center}
+  {\LARGE\bfseries\color{utdarkorange} ECE 414/517: Reinforcement Learning}\\[4pt]
+  {\large Fall 2026 Syllabus}\\[3pt]
+  University of Tennessee, Knoxville
+\end{center}
+
+\vspace{0.3em}
+\begin{tabular}{@{}>{\bfseries}p{1.35in}>{\raggedright\arraybackslash}p{5.15in}@{}}
+Course meetings: & Tuesdays and Thursdays, 12:55--2:10 PM \\
+Location: & Min Kao Building, Room 405 (MKB 405) \\
+Instructor: & Fei Liu, \href{mailto:fliu33@utk.edu}{fliu33@utk.edu} \\
+Office hours: & Thursdays, 2:15--3:00 PM, Min Kao Building, Room 612; or by appointment \\
+Teaching assistant: & Farong Wang, \href{mailto:fwang31@vols.utk.edu}{fwang31@vols.utk.edu} \\
+Canvas: & \url{https://utk.instructure.com/} \\
+\end{tabular}
+
+\section*{Course Description}
+\sectionrule
+
+This course develops the foundations of reinforcement learning (RL): how an agent can learn to make sequential decisions through interaction with an environment. The course begins with multi-armed bandits and Markov decision processes, then develops dynamic programming, Monte Carlo methods, temporal-difference learning, tabular control, planning, function approximation, and policy-gradient methods. The final portion introduces deep reinforcement learning, reward design and learning from preferences, and reinforcement learning beyond the Markov property.
+
+The emphasis is on understanding the assumptions, derivations, and behavior of core algorithms rather than simply applying software libraries. Homework, coding assignments, and a semester-long project connect the theory to complete learning systems and empirical evaluation.
+
+\section*{Learning Objectives}
+\sectionrule
+
+By the end of the course, students should be able to:
+\begin{itemize}
+  \item formulate sequential decision problems as multi-armed bandits or Markov decision processes;
+  \item derive and apply Bellman equations and dynamic-programming methods;
+  \item compare Monte Carlo and temporal-difference prediction and control;
+  \item explain on-policy, off-policy, model-free, and model-based learning;
+  \item analyze value-function approximation, policy-gradient, actor--critic, and deep-RL methods;
+  \item implement representative RL algorithms and evaluate them using reproducible experiments; and
+  \item diagnose learning behavior and communicate experimental findings clearly.
+\end{itemize}
+
+\section*{Prerequisites}
+\sectionrule
+
+Familiarity with probability, linear algebra, basic optimization, and programming is expected. The course does not include a separate mathematics or coding foundations unit; students should refresh these topics independently as needed.
+
+\placeholder{Specify any additional expectations or differentiated requirements for students enrolled in ECE 517.}
+
+\section*{Required and Recommended Materials}
+\sectionrule
+
+\textbf{Primary text:} Richard S. Sutton and Andrew G. Barto, \emph{Reinforcement Learning: An Introduction}, second edition. The book is available from the authors at the \href{http://incompleteideas.net/book/the-book-2nd.html}{Sutton--Barto book webpage}.
+
+\textbf{Additional reference:} David Silver, \emph{Reinforcement Learning Course}, University College London.
+
+Course-specific materials, announcements, assignment specifications, and grades will be posted on Canvas. Readings listed in the schedule refer to Sutton and Barto (S\&B), second edition.
+
+\section*{Assessment and Grading}
+\sectionrule
+
+\begin{center}
+\begin{tabular}{@{}p{5.2in}r@{}}
+\toprule
+\textbf{Component} & \textbf{Weight} \\
+\midrule
+Class participation and in-class quizzes & 5\% \\
+Three written homework assignments & 30\% \\
+Three coding assignments & 45\% \\
+Combined midterm/final project & 20\% \\
+\midrule
+\textbf{Total} & \textbf{100\%} \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Each written homework assignment and its corresponding coding assignment will be released together. Unless an assignment specification states otherwise, submissions will be made through Canvas.
+
+\textbf{Late policy:} Work submitted up to 24 hours after the deadline will receive a 25\% penalty. Work submitted more than 24 hours late will not be accepted unless an exception has been approved by the instructor in advance or is required by university policy.
+
+\textbf{Letter-grade scale:} \placeholder{Insert or confirm the course letter-grade scale.}
+
+\section*{Combined Course Project}
+\sectionrule
+
+The midterm and final are two milestones of one combined course project.
+
+\begin{enumerate}
+  \item \textbf{Midterm milestone---build a complete RL system.} Students will define the environment interface, state and action spaces, reward signal, agent interface, experiment loop, logging, and evaluation pipeline. Project integration takes place on October 13, followed by system demonstrations, testing, and milestone review on October 15.
+  \item \textbf{Final milestone---train and evaluate an RL agent.} Students will use the theory and algorithms learned in the course to train an RL agent in simulation, establish appropriate baselines and evaluation metrics, analyze experimental results, and communicate lessons learned. A short progress report is due November 10. Final posters and live demonstrations will be presented on December 1.
+\end{enumerate}
+
+Detailed project requirements, group rules, deliverables, rubrics, and final-report deadlines will be announced in class and posted on Canvas.
+
+\section*{Course Expectations and Policies}
+\sectionrule
+
+\textbf{Participation and attendance.} Students are expected to attend class, participate in discussions and activities, and complete in-class quizzes. Students who must miss class for an approved reason should notify the instructor as early as possible and remain responsible for the material and announcements.
+
+\textbf{Collaboration.} Collaboration rules will be stated in each assignment specification. Unless explicitly authorized, submitted solutions, code, analyses, plots, and reports must represent the student's or approved project team's own work. Students must identify permitted collaborators and external resources as directed by the assignment.
+
+\textbf{Generative AI and coding assistants.} \placeholder{Insert the permitted-use and disclosure policy for generative AI tools and coding assistants.}
+
+\textbf{Communication.} Course announcements and assignment updates will be posted on Canvas. Students are responsible for checking Canvas and their university email regularly.
+
+\textbf{Academic integrity.} Students are expected to follow the University of Tennessee's Honor Statement and current academic-integrity policies. Suspected violations will be handled according to university procedures. \placeholder{Insert the current official UTK academic-integrity statement or required syllabus language.}
+
+\textbf{Accessibility and accommodations.} Students who need accommodations should contact the appropriate UTK accessibility office and provide the instructor with the official accommodation notice as early as possible. \placeholder{Insert the current official UTK accessibility statement and contact information.}
+
+\textbf{Wellness, safety, and university resources.} \placeholder{Insert any currently required UTK statements concerning student wellness, Title IX, emergency procedures, campus safety, and other syllabus resources.}
+
+\textbf{Changes to the syllabus.} The instructor may adjust the schedule or course policies when necessary. Material changes will be communicated in class and through Canvas.
+
+\clearpage
+\section*{Tentative Course Schedule}
+\sectionrule
+
+The schedule is tentative and may be adjusted as the semester progresses. Shaded rows identify university closures, tutorial/review sessions, and project milestones.
+
+\small
+\setlength{\LTpre}{4pt}
+\setlength{\LTpost}{4pt}
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{0.72in} >{\raggedright\arraybackslash}p{2.30in} >{\raggedright\arraybackslash}p{1.05in} >{\raggedright\arraybackslash}p{2.05in}@{}}
+\toprule
+\textbf{Date} & \textbf{Topic} & \textbf{Reading} & \textbf{Assignment or Milestone} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Date} & \textbf{Topic} & \textbf{Reading} & \textbf{Assignment or Milestone} \\
+\midrule
+\endhead
+\midrule
+\multicolumn{4}{r}{\footnotesize Continued on next page}\\
+\endfoot
+\bottomrule
+\endlastfoot
+
+Tue., Aug. 18 & Course introduction: agent--environment interaction, rewards, examples, and challenges & S\&B 1.1--1.4 & --- \\
+Thu., Aug. 20 & Multi-armed bandits I: action values, sample averages, constant step sizes, and $\varepsilon$-greedy & S\&B 2.1--2.5 & --- \\
+Tue., Aug. 25 & Multi-armed bandits II: optimism, UCB, gradient bandits, nonstationarity, and regret & S\&B 2.5--2.8 & --- \\
+Thu., Aug. 27 & Markov decision processes I: states, actions, transition models, Markov property, and policies & S\&B 3.1--3.4 & --- \\
+Tue., Sep. 1 & Markov decision processes II: returns, discounting, episodic and continuing tasks, and value functions & S\&B 3.3--3.7 & Homework 1 + Coding Assignment 1 released \\
+Thu., Sep. 3 & Bellman equations and policy evaluation & S\&B 3.5--3.6, 4.1 & --- \\
+Tue., Sep. 8 & Policy improvement and policy iteration & S\&B 4.2--4.3 & --- \\
+Thu., Sep. 10 & Value iteration and dynamic programming & S\&B 4.4--4.7 & --- \\
+Tue., Sep. 15 & Monte Carlo prediction & S\&B 5.1--5.3 & --- \\
+Thu., Sep. 17 & Monte Carlo control and off-policy learning & S\&B 5.4--5.7 & --- \\
+Tue., Sep. 22 & Temporal-difference prediction: TD(0), bootstrapping, and MC--TD comparison & S\&B 6.1--6.3 & --- \\
+\rowcolor{tutorialbg}
+Thu., Sep. 24 & TA-led coding tutorial: implement SARSA and Q-learning and compare their behavior & S\&B 6.4--6.7 & \textbf{Homework 1 + Coding Assignment 1 due} \\
+\rowcolor{noclassbg}
+Tue., Sep. 29 & \textbf{No class---IROS travel}; optional guided review & --- & Homework 2 + Coding Assignment 2 released \\
+\rowcolor{noclassbg}
+Thu., Oct. 1 & \textbf{No class---IROS travel} & --- & --- \\
+\rowcolor{noclassbg}
+Tue., Oct. 6 & \textbf{No class---Fall Break} & --- & --- \\
+\rowcolor{tutorialbg}
+Thu., Oct. 8 & Homework and coding assignment Q\&A/review session & --- & Bring questions \\
+\rowcolor{milestonebg}
+Tue., Oct. 13 & Combined project midterm milestone: project integration & Project specification & Bring a laptop \\
+\rowcolor{milestonebg}
+Thu., Oct. 15 & Combined project midterm milestone: demonstrations, testing, feedback, and review & Project specification & Bring a laptop \\
+Tue., Oct. 20 & $n$-step temporal-difference learning & S\&B 7.1--7.3; selected Ch.~12 & Final project phase begins: train an RL agent in simulation \\
+Thu., Oct. 22 & Planning and learning I: Dyna, direct and indirect learning, and simulated experience & S\&B 8.1--8.3 & \textbf{Homework 2 + Coding Assignment 2 due} \\
+Tue., Oct. 27 & Planning and learning II: prioritized sweeping, trajectories, and planning at decision time & S\&B 8.4--8.11 & Homework 3 + Coding Assignment 3 released \\
+Thu., Oct. 29 & Value-function approximation I: linear features, objectives, and semi-gradient prediction & S\&B 9.1--9.5 & --- \\
+\rowcolor{noclassbg}
+Tue., Nov. 3 & \textbf{No class---Election Day} & --- & --- \\
+Thu., Nov. 5 & Value-function approximation II: control, off-policy instability, and the deadly triad & S\&B 10.1, 11.1 & --- \\
+Tue., Nov. 10 & Policy gradients I: parameterized policies, score functions, and REINFORCE & S\&B 13.1--13.3 & Final-project progress check: short summary report \\
+Thu., Nov. 12 & Policy gradients II: baselines, actor--critic, variance, and continuing tasks & S\&B 13.4--13.5 & --- \\
+Tue., Nov. 17 & Deep reinforcement learning: DQN, experience replay, target networks, representation learning, and stability & Course materials & --- \\
+Thu., Nov. 19 & Reward design and learning from preferences: reward shaping, inverse RL, and preference feedback & Course materials & \textbf{Homework 3 + Coding Assignment 3 due} \\
+Tue., Nov. 24 & RL beyond the Markov property: partial observability, state representation, memory, belief states, and recurrent agents & Course materials & --- \\
+\rowcolor{noclassbg}
+Thu., Nov. 26 & \textbf{No class---Thanksgiving Recess} & --- & --- \\
+\rowcolor{milestonebg}
+Tue., Dec. 1 & Final project poster and demo sessions: system, trained agent, results, and lessons learned & Poster/demo guidelines & \textbf{Project poster and live demo} \\
+
+\end{longtable}
+\normalsize
+
+\textbf{UTK calendar notes:} Full-session classes end Tuesday, December 1. Study Day is Wednesday, December 2. Final examinations run December 3--9. Additional final-project deadlines will be confirmed in class and posted on Canvas.
+
+\vfill
+\begin{center}
+\footnotesize Last updated: August 18, 2026
+\end{center}
+
+\end{document}
