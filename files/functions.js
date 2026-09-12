@@ -6,9 +6,19 @@ let showSelectedMode = true;
 window.onload = () => {
   showTopNews();
   showAllPapers();
+  enhanceResourceButtons();
   // showSelectedPapers();
   // showTopTalks();
 };
+
+function enhanceResourceButtons() {
+  document.querySelectorAll('.publication-page .custom-btn-small').forEach(link => {
+    const label = link.textContent.trim();
+    if (!label) return;
+    link.setAttribute('aria-label', label);
+    link.setAttribute('title', label);
+  });
+}
 
 function disableLink(linkId) {
   const link = document.getElementById(linkId);
