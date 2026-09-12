@@ -12,13 +12,14 @@ window.onload = () => {
 
 function disableLink(linkId) {
   const link = document.getElementById(linkId);
-  link.style.pointerEvents = 'none';
+  if (!link) return;
   link.classList.add('active');
 }
 
 function enableLink(linkId) {
   const link = document.getElementById(linkId);
-  link.style.pointerEvents = 'auto';    // Restores clickability
+  if (!link) return;
+  link.style.pointerEvents = 'auto';
   link.classList.remove('active');
 }
 
@@ -50,11 +51,15 @@ function showSelectedPapers() {
 
 function showAllPapers() {
   showSelectedMode = false;
+  currentTopic = 'all';
+  document.querySelectorAll('.topic-btn').forEach(btn => btn.classList.remove('active'));
+  const allTopicsButton = document.getElementById('topic-all');
+  if (allTopicsButton) allTopicsButton.classList.add('active');
   applyFilters();
 
   // Disable and underline "Show All" link
   disableLink('showAllLink');
-  // Enable "Show Selected" link
+  // Keep this action available so it can reset an active topic filter.
   enableLink('showSelectedLink');
 }
 
@@ -64,6 +69,13 @@ function filterByTopic(topic) {
   document.querySelectorAll('.topic-btn').forEach(btn => btn.classList.remove('active'));
   const btn = document.getElementById(`topic-${topic}`) || document.getElementById('topic-all');
   if (btn) btn.classList.add('active');
+
+  if (topic === 'all') {
+    disableLink('showAllLink');
+  } else {
+    enableLink('showAllLink');
+  }
+
   applyFilters();
 }
 
@@ -73,7 +85,7 @@ function applyFilters() {
     const topics = (paper.getAttribute('data-topics') || '').split(',').map(t => t.trim()).filter(Boolean);
     const topicMatches = currentTopic === 'all' || topics.includes(currentTopic);
     const visible = topicMatches;
-    paper.style.display = visible ? 'list-item' : 'none';
+    paper.style.display = visible ? '' : 'none';
   });
   // allPapers.forEach(paper => {
   //   const isSelected = paper.getAttribute('data-selected') === 'true';
@@ -83,4 +95,3 @@ function applyFilters() {
   //   paper.style.display = visible ? 'list-item' : 'none';
   // });
 }
-

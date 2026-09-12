@@ -57,12 +57,14 @@
   <!-- <script src="js/main.js"></script> -->
   <!-- <script src="js/scroll.js"></script> -->
 
-  <title>Publications</title>
+  <meta name="description" content="Publications from the AURAS Lab at the University of Tennessee, Knoxville.">
+  <title>Publications | AURAS Lab</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
 
 </head>
 
 
-<body>
+<body class="publication-page">
   <!-- <style>
     body {
       padding: 0;
@@ -79,9 +81,9 @@
           <div class="container-fluid"
                style="width: 70%;">
             <!-- Left-aligned brand -->
-            <a class="navbar-brand"
-               href="index.html">
-              <strong style="color:#ffffff">AURAS Lab</strong>
+            <a class="navbar-brand" href="index.html" aria-label="AURAS Lab home">
+              <img class="brand-logo" src="image/lab_logo.png" alt="">
+              <span class="brand-name">AURAS Lab</span>
             </a>
 
             <!-- Navbar toggler for mobile view -->
@@ -99,26 +101,26 @@
             <div class="collapse navbar-collapse"
                  id="navbarSupportedContent">
               <ul class="navbar-nav ms-auto">
-                <!-- <ul class="navbar-nav ms-auto"> -->
                 <li class="nav-item">
-                  <a class="nav-link active"
-                     aria-current="page"
+                  <a class="nav-link"
                      href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active"
-                     aria-current="page"
-                     href="publication.html">Publications</a>
+                  <a class="nav-link"
+                     href="lab_members.html">People</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link"
+                     href="research.html">Research</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link active"
                      aria-current="page"
+                     href="publication.html">Publication</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link"
                      href="index.html#teaching">Teaching</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active"
-                     aria-current="page"
-                     href="lab_members.html">Lab Members</a>
                 </li>
               </ul>
             </div>
@@ -151,16 +153,16 @@
 
               <p class="textsectionheader">
                 Publications
-                <!-- Use smaller font, color=blue by default. -->
-                <!-- <a href="index.html#"
-                   class="filter-link"
-                   id="showSelectedLink"
-                   onclick="event.preventDefault(); showSelectedPapers();">Show Selected</a> -->
-                <a href="index.html#"
+                <a href="#"
                    class="filter-link"
                    id="showAllLink"
-                   onclick="event.preventDefault(); showAllPapers();">Show by Date</a>
+                   onclick="showAllPapers();">Show by Date</a>
+                <a href="#"
+                   class="filter-link"
+                   id="showSelectedLink"
+                   onclick="showSelectedPapers();">Show Selected</a>
               </p>
+              <p>Research from AURAS across surgical robotics, physical simulation, robot control, motion planning, spatial intelligence, embodied AI, visual understanding, and haptic teleoperation.</p>
 
               <div class="topic-filters">
                 <button class="topic-btn active"
