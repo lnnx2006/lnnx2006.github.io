@@ -221,6 +221,12 @@ p, li { max-width: 74ch; }
   font-weight: 800;
 }
 
+.font-liu-jian-mao-cao-regular {
+  font-family: "Liu Jian Mao Cao", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .font-zhi-mang-xing-regular {
   display: block;
   margin-top: 0.75rem;
@@ -504,7 +510,7 @@ a:hover .people-img { transform: translateY(-3px); filter: saturate(1.05); }
   aspect-ratio: 1 / 1;
   object-fit: cover;
   border: 1px solid var(--line);
-  border-radius: 0.4rem;
+  border-radius: 1.0rem;
 }
 
 .profile-identity h1 {
