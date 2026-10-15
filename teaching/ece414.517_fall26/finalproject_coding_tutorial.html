@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light" />
+  <meta name="description" content="ECE 414/517 Reinforcement Learning coding tutorials: exercise and solution notebooks for Basics I and II." />
+  <title>ECE 414/517 | Reinforcement Learning Tutorials</title>
+  <style>
+    :root { --navy:#153c58; --ink:#253a4a; --muted:#596b78; --line:#dce4e8; --orange:#ed7d25; --soft:#f5f8fa; --bg:#ffffff; --teal:#dcecf1; --radius:14px; }
+    *, *::before, *::after {box-sizing:border-box}
+    html {scroll-behavior:smooth}
+    body {margin:0; background:var(--bg); color:var(--ink); font:16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif}
+    a {color:#0e5685; text-underline-offset:3px} a:hover {color:#bb5e16}
+    .layout {max-width:1240px; margin:auto; display:grid; grid-template-columns:310px minmax(0,1fr); min-height:100vh}
+    aside {border-right:1px solid var(--line); background:#f9fbfc; padding:54px 30px 30px 34px; display:flex; flex-direction:column; gap:25px}
+    .eyebrow {font-size:.74rem; letter-spacing:.14em; text-transform:uppercase; font-weight:800; color:#a45419}
+    .course-mark {display:flex; align-items:center; gap:13px}
+    .t-mark {width:48px; height:48px; border-radius:11px; background:var(--orange); color:white; font-weight:900; font-size:28px; display:grid; place-items:center; line-height:1; flex-shrink:0}
+    .course-mark .dept {line-height:1.35; color:#355369; font-size:.86rem; font-weight:650}
+    .aside-title {font-size:2.05rem; line-height:1.16; letter-spacing:-.035em; color:var(--navy); font-weight:800; margin:0}
+    .aside-description {color:var(--muted); margin:-12px 0 0}
+    .course-meta {border-top:1px solid var(--line); padding-top:23px; color:var(--muted); font-size:.88rem}
+    .course-meta strong {color:var(--ink)}
+    .left-bottom {margin-top:auto; padding-top:28px; border-top:1px solid var(--line); color:var(--muted); font-size:.78rem}
+    .left-bottom span {display:block}
+    main {padding:53px clamp(24px,5.2vw,70px) 76px; min-width:0}
+    .topline {display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap; align-items:center; margin-bottom:25px}
+    .section-tag {color:#986022; font-size:.77rem; font-weight:850; letter-spacing:.11em; text-transform:uppercase}
+    .pill {background:#edf4f7; padding:5px 11px; border-radius:99px; font-size:.76rem; color:#3b6374; font-weight:700}
+    h1 {font-size:clamp(2rem,3.3vw,2.9rem); line-height:1.16; letter-spacing:-.04em; color:var(--navy); margin:0 0 14px}
+    p.lead {font-size:1.07rem; max-width:710px; margin:0 0 22px; color:#4b6272}
+    .notice {display:flex; align-items:flex-start; gap:13px; border:1px solid #c9dfeb; background:#f0f7fa; border-radius:12px; padding:15px 18px; color:#385b70; margin:25px 0 35px; font-size:.93rem}
+    .notice svg {width:22px; flex-shrink:0; margin-top:3px}
+    h2 {font-size:1.43rem; line-height:1.25; color:var(--navy); letter-spacing:-.018em; margin:43px 0 10px}
+    h2::before {content:""; display:inline-block; width:5px; height:21px; background:var(--orange); border-radius:3px; margin-right:12px; vertical-align:-3px}
+    .section-desc {color:var(--muted); margin:0 0 21px}
+    .table-wrap {overflow-x:auto; border:1px solid var(--line); border-radius:var(--radius); box-shadow:0 8px 30px rgba(29,56,77,.045)}
+    table {border-collapse:collapse; width:100%; min-width:620px}
+    th {text-align:left; background:#e9f2f6; padding:13px 17px; font-size:.79rem; text-transform:uppercase; letter-spacing:.055em; color:#36566b}
+    th:nth-child(3), th:nth-child(4), td:nth-child(3), td:nth-child(4) {text-align:center}
+    td {padding:19px 17px; border-top:1px solid var(--line); font-size:.94rem}
+    tbody tr:hover {background:#fbfcfd}
+    .module {display:block; font-weight:750; color:var(--navy); white-space:nowrap}
+    .module-note {font-size:.75rem; color:var(--muted)}
+    .colab {display:inline-flex; align-items:center; justify-content:center; gap:7px; border:1px solid #da892e; color:#81400c; background:#fff6e9; border-radius:9px; font-size:.8rem; font-weight:750; padding:8px 11px; line-height:1; text-decoration:none; white-space:nowrap; transition:background .15s,transform .15s}
+    .colab:hover {background:#ffeacc; color:#81400c; transform:translateY(-1px)}
+    .colab svg {width:15px;height:15px}
+    button.colab {font-family:inherit; cursor:pointer} button.colab:focus-visible, .modal-action:focus-visible {outline:3px solid #ed7d25; outline-offset:3px}
+    .colab.solution {border-color:#b8cfdb; background:#f0f6f9; color:#315a70}
+    .colab.solution:hover {background:#dceaf2}
+    ol {padding-left:25px; margin:13px 0 22px}
+    ol li {padding:0 0 12px 7px}
+    ol strong {color:var(--navy)}
+    .setup {background:#182f42; color:#e9f1f5; padding:19px 23px; border-radius:11px; margin:18px 0 4px; overflow:auto; font-size:.86rem}
+    .setup pre {margin:0;font:inherit;line-height:1.8;white-space:pre}
+    .setup .comment {color:#a2c0d0}
+    .footer {border-top:1px solid var(--line); margin-top:55px; padding-top:21px; color:#62717d; font-size:.78rem}
+    .footer a {color:#456f86}
+    .solution-dialog {width:min(420px,calc(100vw - 36px)); max-width:100%; border:1px solid #d8e3e8; border-radius:16px; padding:0; color:var(--ink); background:white; box-shadow:0 24px 75px rgba(13,35,52,.24)}
+    .solution-dialog::backdrop {background:rgba(15,36,52,.55)}
+    .dialog-body {padding:27px 29px 26px}
+    .dialog-kicker {font-size:.77rem; text-transform:uppercase; letter-spacing:.10em; font-weight:800; color:#bd681b; margin-bottom:8px}
+    .dialog-body h3 {font-size:1.35rem; color:var(--navy); line-height:1.25; margin:0 0 7px}
+    .dialog-body p {margin:0 0 18px; color:var(--muted); font-size:.91rem}
+    .dialog-body label {font-size:.85rem; font-weight:730; color:#325164; display:block; margin-bottom:7px}
+    .dialog-body input {width:100%; border:1px solid #a7bfcd; border-radius:9px; background:white; padding:11px 12px; font:inherit; font-size:1rem}
+    .dialog-body input:focus {outline:3px solid #dcecf1; border-color:#2874a5}
+    .modal-error {color:#a53a2b; font-size:.82rem; min-height:1.35rem; margin:7px 0 5px}
+    .modal-actions {display:flex; justify-content:flex-end; gap:10px; margin-top:8px}
+    .modal-action {font:inherit; font-weight:750; font-size:.88rem; border-radius:9px; padding:10px 16px; border:1px solid #c9d7df; background:white; color:#31536a; cursor:pointer}
+    .modal-action.primary {background:var(--navy); color:white; border-color:var(--navy)}
+    .modal-action.primary:hover {background:#225979}
+    @media (max-width:830px) { .layout {display:block} aside {padding:27px 24px 24px; border-right:0; border-bottom:1px solid var(--line); gap:16px} .aside-title {font-size:1.55rem} .left-bottom,.course-meta{display:none} .aside-description{margin:0} main {padding:29px 20px 56px} .topline{margin-bottom:14px} }
+    @media print {aside{padding:20px} .layout{grid-template-columns:220px 1fr} main{padding:24px} .table-wrap{overflow:visible} table{min-width:0} .colab{font-size:.7rem;padding:5px} a{color:#1b4c67} }
+  </style>
+</head>
+<body>
+  <div class="layout">
+    <aside aria-label="Course information">
+      <div class="course-mark">
+        <div class="t-mark" aria-hidden="true">T</div>
+        <span class="dept">THE UNIVERSITY OF TENNESSEE<br />KNOXVILLE</span>
+      </div>
+      <span class="eyebrow">ECE 414 / 517</span>
+      <h2 class="aside-title">Reinforcement<br />Learning</h2>
+      <p class="aside-description">Coding Tutorials<br />Problem Formulation · Prediction · Control</p>
+      <div class="course-meta"><strong>Fall 2026</strong><br />Department of Electrical Engineering &amp; Computer Science</div>
+      <div class="left-bottom"><span>Course tutorial resource page</span><span>Exercise notebooks and solution references</span></div>
+    </aside>
+    <main>
+      <div class="topline"><span class="section-tag">ECE 414 / 517 &nbsp;·&nbsp; Course Materials</span><span class="pill">Google Colab · Python</span></div>
+      <h1>Reinforcement Learning<br />Coding Tutorials</h1>
+      <p class="lead">Practical notebooks for building RL environments, estimating value functions, and learning control policies. Choose a module and open its notebook in Google Colab.</p>
+
+      <div class="notice">
+        <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#527d95" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0 4-4m-4 4-4-4"/><path d="M5 17v3h14v-3"/></svg>
+        <div><strong>No local installation required.</strong><br />The notebooks can be opened directly in Colab. Use <strong>File → Save a copy in Drive</strong> before editing so your work is saved to your own account.</div>
+      </div>
+
+      <section id="tutorials" aria-labelledby="tutorial-heading">
+        <h2 id="tutorial-heading">Interactive Tutorials</h2>
+        <p class="section-desc">Each module has an exercise notebook and a separate reference solution. The solution passcode will be provided in class.</p>
+        <div class="table-wrap"><table>
+          <thead><tr><th>Module</th><th>Topics</th><th>Exercise</th><th>Solution</th></tr></thead>
+          <tbody>
+            <tr>
+              <td><span class="module">Basics of RL I</span><span class="module-note">Introductory methods</span></td>
+              <td>Gymnasium API, tabular RL, prediction and control</td>
+              <td><a class="colab" target="_blank" rel="noopener noreferrer" href="https://colab.research.google.com/github/utkauraslab/ECE414-517_RL/blob/main/RL-basics/RL01_Intro_to_RL.ipynb"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M13 6h6v6M19 5l-9 9"/><rect x="4" y="9" width="11" height="11" rx="2"/></svg>Open in Colab</a></td>
+              <td><button type="button" class="colab solution" data-solution="basics1">&#128274; View solution</button></td>
+            </tr>
+            <tr>
+              <td><span class="module">Basics of RL II</span><span class="module-note">Advanced methods</span></td>
+              <td>Policy gradient algorithms</td>
+              <td><a class="colab" target="_blank" rel="noopener noreferrer" href="https://colab.research.google.com/github/utkauraslab/ECE414-517_RL/blob/main/policy-gradient/RL02__Policy_gradient_methods.ipynb"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M13 6h6v6M19 5l-9 9"/><rect x="4" y="9" width="11" height="11" rx="2"/></svg>Open in Colab</a></td>
+              <td><button type="button" class="colab solution" data-solution="basics2">&#128274; View solution</button></td>
+            </tr>
+          </tbody>
+        </table></div>
+      </section>
+
+      <section id="instructions" aria-labelledby="instructions-heading">
+        <h2 id="instructions-heading">Instructions for Students</h2>
+        <ol>
+          <li><strong>Open a notebook.</strong> Choose a module and select <em>Open in Colab</em>.</li>
+          <li><strong>Save your own copy.</strong> In Colab, select <em>File → Save a copy in Drive</em>.</li>
+          <li><strong>Work through the cells.</strong> Run each section in order, complete the TODOs, and review training results and visualizations.</li>
+        </ol>
+      </section>
+
+      <section id="local" aria-labelledby="local-heading">
+        <h2 id="local-heading">Course Repository</h2>
+        <p class="section-desc">
+          The exercise and solution notebooks are stored in the top-level
+          <code>RL-basics</code> and <code>policy-gradient</code> folders.
+          When opened in Google Colab, the notebooks automatically load their
+          supporting files from <code>tutorial-utk-main</code> in the same course repository.
+        </p>
+        <div class="setup"><pre><span class="comment"># Course repository</span>
+https://github.com/utkauraslab/ECE414-517_RL
+
+<span class="comment"># Support-file locations used by the notebooks</span>
+tutorial-utk-main/RL-basics
+tutorial-utk-main/RL-gradient</pre></div>
+      </section>
+
+      <footer class="footer">
+        <strong>Course page:</strong> ECE 414/517 · University of Tennessee, Knoxville.<br />
+        <strong>Source attribution:</strong> Tutorial notebooks were adapted with permission from materials prepared by Leonardo Cesani, Enea Gusmeroli, Enrique Mateos-Melero, Cristiano Migali, Davide Salaorni, Gianmarco Tedeschi, and Davide Tenedini.
+        <a href="https://github.com/gianmtedeschi/tutorial-rlss26" target="_blank" rel="noopener noreferrer">Original tutorial repository ↗</a>.<br />
+        This course landing page is an independently authored course-format adaptation.
+      </footer>
+    </main>
+  </div>
+
+  <dialog id="solution-dialog" class="solution-dialog" aria-labelledby="solution-dialog-title" aria-describedby="solution-dialog-description">
+    <div class="dialog-body">
+      <div class="dialog-kicker">ECE 414/517 · Instructor resources</div>
+      <h3 id="solution-dialog-title">Solution passcode</h3>
+      <p id="solution-dialog-description">Enter the passcode provided in class to open the reference solution in Google Colab.</p>
+      <form id="solution-passcode-form">
+        <label for="solution-passcode">Passcode</label>
+        <input id="solution-passcode" type="password" inputmode="numeric" autocomplete="off" required maxlength="20" placeholder="Enter passcode" />
+        <div id="solution-error" class="modal-error" role="status" aria-live="polite"></div>
+        <div class="modal-actions">
+          <button class="modal-action" type="button" id="solution-cancel">Cancel</button>
+          <button class="modal-action primary" type="submit">Unlock solution ↗</button>
+        </div>
+      </form>
+    </div>
+  </dialog>
+
+  <script>
+    const SOLUTION_URLS = {
+      basics1: "https://colab.research.google.com/github/utkauraslab/ECE414-517_RL/blob/main/RL-basics/RL01_Intro_to_RL_solution.ipynb",
+      basics2: "https://colab.research.google.com/github/utkauraslab/ECE414-517_RL/blob/main/policy-gradient/RL02__Policy_gradient_methods_solution.ipynb"
+    };
+
+    const COURSE_PASSCODE = "414517";
+    const solutionDialog = document.getElementById("solution-dialog");
+    const solutionForm = document.getElementById("solution-passcode-form");
+    const solutionInput = document.getElementById("solution-passcode");
+    const solutionError = document.getElementById("solution-error");
+    let selectedSolution = null;
+
+    for (const button of document.querySelectorAll("[data-solution]")) {
+      button.addEventListener("click", () => {
+        selectedSolution = button.dataset.solution;
+        solutionForm.reset();
+        solutionError.textContent = "";
+        solutionDialog.showModal();
+        solutionInput.focus();
+      });
+    }
+
+    document.getElementById("solution-cancel").addEventListener("click", () => solutionDialog.close());
+
+    solutionDialog.addEventListener("close", () => {
+      selectedSolution = null;
+      solutionInput.value = "";
+      solutionError.textContent = "";
+    });
+
+    solutionForm.addEventListener("submit", (event) => {
+      event.preventDefault();
+      if (solutionInput.value.trim() !== COURSE_PASSCODE) {
+        solutionError.textContent = "Incorrect passcode. Please try again.";
+        solutionInput.select();
+        return;
+      }
+      const url = SOLUTION_URLS[selectedSolution];
+      if (!url) return;
+      solutionDialog.close();
+      window.open(url, "_blank", "noopener,noreferrer");
+    });
+  </script>
+</body>
+</html>
