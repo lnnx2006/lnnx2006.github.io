@@ -130,9 +130,8 @@ li + li { margin-top: 5px; }
 .schedule-table th { background: #f0f0f0; font-weight: 700; }
 .schedule-table th:first-child, .schedule-table td:first-child { width: 54px; text-align: center; }
 .schedule-table th:nth-child(2), .schedule-table td:nth-child(2) { width: 112px; white-space: nowrap; }
-.schedule-table th:nth-child(3) { width: 34%; }
-.schedule-table th:nth-child(4) { width: 21%; }
-.schedule-table th:nth-child(5) { width: 20%; }
+.schedule-table th:nth-child(3) { width: 50%; }
+.schedule-table th:nth-child(4) { width: 30%; }
 .schedule-table tbody tr:nth-child(even):not(.no-class):not(.assessment):not(.tutorial) { background: #fbfbfb; }
 .schedule-table tr.no-class { color: var(--no-class-text); background: var(--no-class); }
 .schedule-table tr.no-class td:first-child { border-left: 5px solid #c43d3d; }
